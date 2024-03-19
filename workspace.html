@@ -1,0 +1,4266 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="ROBOTS" content="INDEX,FOLLOW">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Book your campus visit</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./resources/css/custom.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Oswald:wght@400;700&display=swap"
+    rel="stylesheet">
+  
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4NXPNK9L4W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4NXPNK9L4W');
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TM57T68Q');</script>
+<!-- End Google Tag Manager -->
+  
+  <!-- Hotjar Tracking Code for SNHU Properties -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2360018,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+  
+<!-- Hotjar Tracking Code for SNHU Properties -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2360018,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+  
+  <!--jquery for forms-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+ <style>
+   
+   body {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: Oswald, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #0a3370;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0a3370;
+  font-weight: 700;
+
+}
+
+.display-4 {
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #fdb913;
+  color: #0a3370;
+  border-color: #fdb913;
+  font-weight: 700;
+}
+
+.btn-outline-secondary {
+  --bs-btn-color: #fff;
+  --bs-btn-border-color: #fff;
+  --bs-btn-hover-color: #444;
+  --bs-btn-hover-bg: #efefef;
+  --bs-btn-hover-border-color: #efefef;
+  --bs-btn-focus-shadow-rgb: 108, 117, 125;
+  --bs-btn-active-color: #444;
+  --bs-btn-active-bg: #6c757d;
+  --bs-btn-active-border-color: #6c757d;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #6c757d;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #6c757d;
+  --bs-gradient: none;
+}
+
+
+.btn-primary:hover {
+  color: #fee097;
+}
+
+.btn-primary:hover {
+  color: #0a3370;
+  background-color: #fee097;
+  border-color: #fee097;
+}
+
+.bg-primary {
+  color: #0a3370;
+}
+
+
+.bg-dark {
+  color: #00244E !important;
+}
+
+/* Nav */
+
+.nav-link,
+.text-link {
+  font-weight: 700;
+  text-decoration: none;
+  color: #0a3370;
+}
+
+.nav-link:hover,
+.text-link:hover {
+  text-decoration: underline #70abdb 2px;
+  text-underline-offset: 5px;
+  cursor: pointer;
+  color: #00244E;
+}
+
+.text-bg-dark {
+  background-color: #00244E !important;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.form-control-dark {
+  border-color: var(--bs-gray);
+}
+
+.form-control-dark:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+}
+
+.text-small {
+  font-size: 85%;
+}
+
+.dropdown-toggle {
+  outline: 0;
+}
+
+
+
+
+.border-top {
+  border-color: #009DEA !important;
+}
+
+/* Hero */
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (min-width: 992px) {
+  .rounded-lg-3 {
+    border-radius: .3rem;
+  }
+}
+
+
+.bgimage {
+  width: 100%;
+  height: 650px;
+  background-image: linear-gradient(to right, rgba(0, 36, 78, 0.9), rgba(0, 36, 78, 0)),url('https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/1c03aaeb-a375-47e2-9b5d-4ca345cf5a42.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: none;
+  background-color: #00244E;
+}
+
+
+.bgimage h1 {
+  color: white;
+}
+
+
+
+
+
+
+
+/* Video BG */
+
+.bg-image {
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+
+.vh-100 {
+  height: 100vh !important;
+}
+
+
+
+/* Video iFrame */
+
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* New Hero */
+
+
+.hero {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+@media (pointer: coarse) and (hover: none) {
+  .hero {
+    background: url('https://client-data.knak.io/production/email_assets/5fd10b569d941/1fRZ2vSIIINwFoyiYk87bzHIpg26lzU3HefxJ6iB.png') black no-repeat center center scroll;
+  }
+
+  .hero video {
+    display: none;
+  }
+}
+
+
+
+/* Form */
+
+.hidden {
+  display: none;
+}
+
+
+/* Overrides Form Styling */
+
+/* CAMPUS EVENTS from Andrew */
+
+.HidePrePopFields {
+  display: none;
+}
+
+.wFormContainer .wForm .inputWrapper select:not([multiple]) {
+  height: 55px !important;
+  padding: 1em !important;
+}
+
+/* Define the styles for selectable and non-selectable dates */
+.selectable a {
+  background-color: #009DEA !important;
+}
+
+.non-selectable a {
+  background-color: #ff9999 !important;
+  cursor: not-allowed !important;
+}
+
+/* Overrides Form Styling */
+
+.wForm {
+  background-color: #F9f9f9 !important;
+  border-color: #F9f9f9 !important;
+  border-radius: 3px;
+  padding: 0rem !important;
+}
+
+.wFormContainer .wForm {
+  padding: 0rem 20rem 0rem 0rem !important;
+}
+
+.wFormTitle {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+  padding: 0rem !important;
+  margin: 0 !important;
+  font-size: 1.5rem !important;
+  background-color: #f9f9f9 !important;
+  color: #666;
+  margin-top: 3rem !important;
+}
+
+.wFormContainer {
+  background-color: #FFFFFF !important;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+
+
+}
+
+.wFormContainer .label {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+  font-size: 1rem !important;
+}
+
+.wFormContainer .actions .primaryAction {
+  background-color: #fdb913 !important;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+  font-size: 1rem !important;
+  color: #0a3370 !important;
+
+}
+
+.wFormContainer .actions .primaryAction:hover {
+  background-color: #fee097 !important;
+}
+
+
+.wFormContainer #tfa_18.timezone {
+  padding: 0 !important;
+}
+
+.wFormContainer .wForm .inputWrapper select {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+  font-size: 1rem !important;
+}
+
+.wFormContainer .supportInfo {
+  border: 2px solid transparent;
+  padding: 0px !important;
+  clear: left;
+  margin-top: 20px !important;
+}
+
+
+.htmlSection .htmlContent {
+  color: #666 !important;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+  line-height: auto;
+}
+
+
+
+/* Datepicker styling */
+
+.ui-helper-hidden {
+  display: none
+}
+
+.ui-helper-hidden-taccessible {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px
+}
+
+.ui-helper-zfix,
+.ui-widget-overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%
+}
+
+.ui-helper-reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  line-height: 1.3;
+  text-decoration: none;
+  font-size: 100%;
+  list-style: none
+}
+
+.ui-helper-clearfix:after,
+.ui-helper-clearfix:before {
+  content: "";
+  display: table;
+  border-collapse: collapse
+}
+
+.ui-helper-clearfix {
+  min-height: 0
+}
+
+.ui-helper-zfix {
+  position: absolute;
+  opacity: 0;
+  filter: Alpha(Opacity=0)
+}
+
+.ui-front {
+  z-index: 100
+}
+
+.ui-state-disabled {
+  cursor: default !important
+}
+
+.ui-icon {
+  display: block;
+  text-indent: -99999px;
+  overflow: hidden;
+  background-repeat: no-repeat
+}
+
+.ui-widget-overlay {
+  position: fixed
+}
+
+.ui-datepicker {
+  width: 17em;
+  padding: .2em .2em 0;
+  display: none;
+  z-index: 10 !important
+}
+
+.ui-datepicker .ui-datepicker-header {
+  position: relative;
+  padding: .2em 0
+}
+
+.ui-datepicker .ui-datepicker-next,
+.ui-datepicker .ui-datepicker-prev {
+  position: absolute;
+  top: 2px;
+  width: 1.8em;
+  height: 1.8em
+}
+
+.ui-datepicker .ui-datepicker-next-hover,
+.ui-datepicker .ui-datepicker-prev-hover {
+  top: 1px
+}
+
+.ui-datepicker .ui-datepicker-prev {
+  left: 2px
+}
+
+.ui-datepicker .ui-datepicker-next {
+  right: 2px
+}
+
+.ui-datepicker .ui-datepicker-prev-hover {
+  left: 1px
+}
+
+.ui-datepicker .ui-datepicker-next-hover {
+  right: 1px
+}
+
+.ui-datepicker .ui-datepicker-next span,
+.ui-datepicker .ui-datepicker-prev span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -8px;
+  top: 50%;
+  margin-top: -8px
+}
+
+.ui-datepicker .ui-datepicker-title {
+  margin: 0 2.3em;
+  line-height: 1.8em;
+  text-align: center
+}
+
+.ui-datepicker .ui-datepicker-title select {
+  font-size: 1em;
+  margin: 1px 0
+}
+
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+  width: 45%
+}
+
+.ui-datepicker table {
+  width: 100%;
+  font-size: .9em;
+  border-collapse: collapse;
+  margin: 0 0 .4em
+}
+
+#root .gsc-control-cse table,
+html body table.gsc-completion-container {
+  border-collapse: separate;
+  border-spacing: 0
+}
+
+.ui-datepicker th {
+  padding: .7em .3em;
+  text-align: center;
+  font-weight: 700;
+  border: 0
+}
+
+.ui-datepicker td {
+  border: 0;
+  padding: 1px
+}
+
+.ui-datepicker td a,
+.ui-datepicker td span {
+  display: block;
+  padding: .2em;
+  text-align: right;
+  text-decoration: none
+}
+
+.ui-datepicker .ui-datepicker-buttonpane {
+  background-image: none;
+  margin: .7em 0 0;
+  padding: 0 .2em;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0
+}
+
+.ui-datepicker .ui-datepicker-buttonpane button {
+  float: right;
+  margin: .5em .2em .4em;
+  cursor: pointer;
+  padding: .2em .6em .3em;
+  width: auto;
+  overflow: visible
+}
+
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current,
+.ui-datepicker-multi .ui-datepicker-group,
+.ui-datepicker-rtl .ui-datepicker-buttonpane button {
+  float: left
+}
+
+.ui-datepicker.ui-datepicker-multi {
+  width: auto
+}
+
+.ui-datepicker-multi .ui-datepicker-group table {
+  width: 95%;
+  margin: 0 auto .4em
+}
+
+.ui-datepicker-multi-2 .ui-datepicker-group {
+  width: 50%
+}
+
+.ui-datepicker-multi-3 .ui-datepicker-group {
+  width: 33.3%
+}
+
+.ui-datepicker-multi-4 .ui-datepicker-group {
+  width: 25%
+}
+
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+  border-left-width: 0
+}
+
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+  clear: left
+}
+
+.ui-datepicker-row-break {
+  clear: both;
+  width: 100%;
+  font-size: 0
+}
+
+.ui-datepicker-rtl {
+  direction: rtl
+}
+
+.ui-datepicker-rtl .ui-datepicker-prev {
+  right: 2px;
+  left: auto
+}
+
+.ui-datepicker-rtl .ui-datepicker-next {
+  left: 2px;
+  right: auto
+}
+
+.ui-datepicker-rtl .ui-datepicker-prev:hover {
+  right: 1px;
+  left: auto
+}
+
+.ui-datepicker-rtl .ui-datepicker-next:hover {
+  left: 1px;
+  right: auto
+}
+
+.ui-datepicker-rtl .ui-datepicker-buttonpane {
+  clear: right
+}
+
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
+.ui-datepicker-rtl .ui-datepicker-group {
+  float: right
+}
+
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+  border-right-width: 0;
+  border-left-width: 1px
+}
+
+.ui-widget {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.1em
+}
+
+.ui-widget .ui-widget {
+  font-size: 1em
+}
+
+.ui-widget button,
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em
+}
+
+.ui-widget-content {
+  border: 1px solid #ddd;
+  background: url(https://www.snhu.edu/assets/SNHU/jquery-ui-1.11.4.custom/images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x #fff;
+  color: #444
+}
+
+.ui-widget-header {
+  border: 1px solid #ddd;
+  background: url(https://www.snhu.edu/assets/SNHU/jquery-ui-1.11.4.custom/images/ui-bg_highlight-soft_50_dddddd_1x100.png) 50% 50% repeat-x #ddd;
+  font-weight: 700
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  border: 1px solid #ddd;
+  background: url(https://www.snhu.edu/assets/SNHU/jquery-ui-1.11.4.custom/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png) 50% 50% repeat-x #f6f6f6;
+  font-weight: 700;
+  color: #0a3370
+}
+
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+  color: #0a3370;
+  text-decoration: none
+}
+
+.ui-state-focus,
+.ui-state-hover,
+.ui-widget-content .ui-state-focus,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-focus,
+.ui-widget-header .ui-state-hover {
+  border: 1px solid #0a3370;
+  background: url(https://www.snhu.edu/assets/SNHU/jquery-ui-1.11.4.custom/images/ui-bg_highlight-soft_25_0e356f_1x100.png) 50% 50% repeat-x #0a3370;
+  font-weight: 700;
+  color: #fff
+}
+
+.ui-state-focus a,
+.ui-state-focus a:hover,
+.ui-state-focus a:link,
+.ui-state-focus a:visited,
+.ui-state-hover a,
+.ui-state-hover a:hover,
+.ui-state-hover a:link,
+.ui-state-hover a:visited {
+  color: #fff;
+  text-decoration: none
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+  border: 1px solid #ddd;
+  background: url(https://www.snhu.edu/assets/SNHU/jquery-ui-1.11.4.custom/images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x #fff;
+  font-weight: 700;
+  color: #539bd4
+}
+
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+  color: #539bd4;
+  text-decoration: none
+}
+
+.ui-widget-content a.ui-state-active {
+  color: #fff;
+  background: #539bd4
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+  border: 1px solid #ccc;
+  background: url(https://www.snhu.edu/assets/SNHU/jquery-ui-1.11.4.custom/images/ui-bg_flat_55_ffffff_40x100.png) 50% 50% repeat-x #fff;
+  color: #444
+}
+
+.ui-state-highlight a,
+.ui-widget-content .ui-state-highlight a,
+.ui-widget-header .ui-state-highlight a {
+  color: #444
+}
+
+.ui-state-error,
+.ui-widget-content .ui-state-error,
+.ui-widget-header .ui-state-error {
+  border: 1px solid #e00914;
+  background: url(https://www.snhu.edu/assets/SNHU/jquery-ui-1.11.4.custom/images/ui-bg_flat_55_ffffff_40x100.png) 50% 50% repeat-x #fff;
+  color: #222
+}
+
+.ui-state-error a,
+.ui-state-error-text,
+.ui-widget-content .ui-state-error a,
+.ui-widget-content .ui-state-error-text,
+.ui-widget-header .ui-state-error a,
+.ui-widget-header .ui-state-error-text {
+  color: #222
+}
+
+.ui-priority-primary,
+.ui-widget-content .ui-priority-primary,
+.ui-widget-header .ui-priority-primary {
+  font-weight: 700
+}
+
+.ui-priority-secondary,
+.ui-widget-content .ui-priority-secondary,
+.ui-widget-header .ui-priority-secondary {
+  opacity: .7;
+  filter: Alpha(Opacity=70);
+  font-weight: 400
+}
+
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+  opacity: .35;
+  filter: Alpha(Opacity=35);
+  background-image: none
+}
+
+.ui-state-disabled .ui-icon {
+  filter: Alpha(Opacity=35)
+}
+
+.ui-icon {
+  width: 16px;
+  height: 16px
+}
+
+.ui-icon,
+.ui-widget-content .ui-icon {
+  background-image: url(https://www.snhu.edu/assets/SNHU/jquery-ui-1.11.4.custom/images/ui-icons_cd0a0a_256x240.png)
+}
+
+.ui-widget-header .ui-icon {
+  background-image: url(https://www.snhu.edu/assets/SNHU/jquery-ui-1.11.4.custom/images/ui-icons_0e356f_256x240.png)
+}
+
+.ui-state-default .ui-icon {
+  background-image: url(https://www.snhu.edu/assets/SNHU/jquery-ui-1.11.4.custom/images/ui-icons_666666_256x240.png)
+}
+
+.ui-state-focus .ui-icon,
+.ui-state-hover .ui-icon {
+  background-image: url(https://www.snhu.edu/assets/SNHU/jquery-ui-1.11.4.custom/images/ui-icons_ffffff_256x240.png)
+}
+
+.ui-state-active .ui-icon {
+  background-image: url(https://www.snhu.edu/assets/SNHU/jquery-ui-1.11.4.custom/images/ui-icons_454545_256x240.png)
+}
+
+.ui-state-highlight .ui-icon {
+  background-image: url(https://www.snhu.edu/assets/SNHU/jquery-ui-1.11.4.custom/images/ui-icons_0e356f_256x240.png)
+}
+
+.ui-state-error .ui-icon,
+.ui-state-error-text .ui-icon {
+  background-image: url(https://www.snhu.edu/assets/SNHU/jquery-ui-1.11.4.custom/images/ui-icons_cd0a0a_256x240.png)
+}
+
+.ui-icon-blank {
+  background-position: 16px 16px
+}
+
+.ui-icon-carat-1-n {
+  background-position: 0 0
+}
+
+.ui-icon-carat-1-ne {
+  background-position: -16px 0
+}
+
+.ui-icon-carat-1-e {
+  background-position: -32px 0
+}
+
+.ui-icon-carat-1-se {
+  background-position: -48px 0
+}
+
+.ui-icon-carat-1-s {
+  background-position: -64px 0
+}
+
+.ui-icon-carat-1-sw {
+  background-position: -80px 0
+}
+
+.ui-icon-carat-1-w {
+  background-position: -96px 0
+}
+
+.ui-icon-carat-1-nw {
+  background-position: -112px 0
+}
+
+.ui-icon-carat-2-n-s {
+  background-position: -128px 0
+}
+
+.ui-icon-carat-2-e-w {
+  background-position: -144px 0
+}
+
+.ui-icon-triangle-1-n {
+  background-position: 0 -16px
+}
+
+.ui-icon-triangle-1-ne {
+  background-position: -16px -16px
+}
+
+.ui-icon-triangle-1-e {
+  background-position: -32px -16px
+}
+
+.ui-icon-triangle-1-se {
+  background-position: -48px -16px
+}
+
+.ui-icon-triangle-1-s {
+  background-position: -64px -16px
+}
+
+.ui-icon-triangle-1-sw {
+  background-position: -80px -16px
+}
+
+.ui-icon-triangle-1-w {
+  background-position: -96px -16px
+}
+
+.ui-icon-triangle-1-nw {
+  background-position: -112px -16px
+}
+
+.ui-icon-triangle-2-n-s {
+  background-position: -128px -16px
+}
+
+.ui-icon-triangle-2-e-w {
+  background-position: -144px -16px
+}
+
+.ui-icon-arrow-1-n {
+  background-position: 0 -32px
+}
+
+.ui-icon-arrow-1-ne {
+  background-position: -16px -32px
+}
+
+.ui-icon-arrow-1-e {
+  background-position: -32px -32px
+}
+
+.ui-icon-arrow-1-se {
+  background-position: -48px -32px
+}
+
+.ui-icon-arrow-1-s {
+  background-position: -64px -32px
+}
+
+.ui-icon-arrow-1-sw {
+  background-position: -80px -32px
+}
+
+.ui-icon-arrow-1-w {
+  background-position: -96px -32px
+}
+
+.ui-icon-arrow-1-nw {
+  background-position: -112px -32px
+}
+
+.ui-icon-arrow-2-n-s {
+  background-position: -128px -32px
+}
+
+.ui-icon-arrow-2-ne-sw {
+  background-position: -144px -32px
+}
+
+.ui-icon-arrow-2-e-w {
+  background-position: -160px -32px
+}
+
+.ui-icon-arrow-2-se-nw {
+  background-position: -176px -32px
+}
+
+.ui-icon-arrowstop-1-n {
+  background-position: -192px -32px
+}
+
+.ui-icon-arrowstop-1-e {
+  background-position: -208px -32px
+}
+
+.ui-icon-arrowstop-1-s {
+  background-position: -224px -32px
+}
+
+.ui-icon-arrowstop-1-w {
+  background-position: -240px -32px
+}
+
+.ui-icon-arrowthick-1-n {
+  background-position: 0 -48px
+}
+
+.ui-icon-arrowthick-1-ne {
+  background-position: -16px -48px
+}
+
+.ui-icon-arrowthick-1-e {
+  background-position: -32px -48px
+}
+
+.ui-icon-arrowthick-1-se {
+  background-position: -48px -48px
+}
+
+.ui-icon-arrowthick-1-s {
+  background-position: -64px -48px
+}
+
+.ui-icon-arrowthick-1-sw {
+  background-position: -80px -48px
+}
+
+.ui-icon-arrowthick-1-w {
+  background-position: -96px -48px
+}
+
+.ui-icon-arrowthick-1-nw {
+  background-position: -112px -48px
+}
+
+.ui-icon-arrowthick-2-n-s {
+  background-position: -128px -48px
+}
+
+.ui-icon-arrowthick-2-ne-sw {
+  background-position: -144px -48px
+}
+
+.ui-icon-arrowthick-2-e-w {
+  background-position: -160px -48px
+}
+
+.ui-icon-arrowthick-2-se-nw {
+  background-position: -176px -48px
+}
+
+.ui-icon-arrowthickstop-1-n {
+  background-position: -192px -48px
+}
+
+.ui-icon-arrowthickstop-1-e {
+  background-position: -208px -48px
+}
+
+.ui-icon-arrowthickstop-1-s {
+  background-position: -224px -48px
+}
+
+.ui-icon-arrowthickstop-1-w {
+  background-position: -240px -48px
+}
+
+.ui-icon-arrowreturnthick-1-w {
+  background-position: 0 -64px
+}
+
+.ui-icon-arrowreturnthick-1-n {
+  background-position: -16px -64px
+}
+
+.ui-icon-arrowreturnthick-1-e {
+  background-position: -32px -64px
+}
+
+.ui-icon-arrowreturnthick-1-s {
+  background-position: -48px -64px
+}
+
+.ui-icon-arrowreturn-1-w {
+  background-position: -64px -64px
+}
+
+.ui-icon-arrowreturn-1-n {
+  background-position: -80px -64px
+}
+
+.ui-icon-arrowreturn-1-e {
+  background-position: -96px -64px
+}
+
+.ui-icon-arrowreturn-1-s {
+  background-position: -112px -64px
+}
+
+.ui-icon-arrowrefresh-1-w {
+  background-position: -128px -64px
+}
+
+.ui-icon-arrowrefresh-1-n {
+  background-position: -144px -64px
+}
+
+.ui-icon-arrowrefresh-1-e {
+  background-position: -160px -64px
+}
+
+.ui-icon-arrowrefresh-1-s {
+  background-position: -176px -64px
+}
+
+.ui-icon-arrow-4 {
+  background-position: 0 -80px
+}
+
+.ui-icon-arrow-4-diag {
+  background-position: -16px -80px
+}
+
+.ui-icon-extlink {
+  background-position: -32px -80px
+}
+
+.ui-icon-newwin {
+  background-position: -48px -80px
+}
+
+.ui-icon-refresh {
+  background-position: -64px -80px
+}
+
+.ui-icon-shuffle {
+  background-position: -80px -80px
+}
+
+.ui-icon-transfer-e-w {
+  background-position: -96px -80px
+}
+
+.ui-icon-transferthick-e-w {
+  background-position: -112px -80px
+}
+
+.ui-icon-folder-collapsed {
+  background-position: 0 -96px
+}
+
+.ui-icon-folder-open {
+  background-position: -16px -96px
+}
+
+.ui-icon-document {
+  background-position: -32px -96px
+}
+
+.ui-icon-document-b {
+  background-position: -48px -96px
+}
+
+.ui-icon-note {
+  background-position: -64px -96px
+}
+
+.ui-icon-mail-closed {
+  background-position: -80px -96px
+}
+
+.ui-icon-mail-open {
+  background-position: -96px -96px
+}
+
+.ui-icon-suitcase {
+  background-position: -112px -96px
+}
+
+.ui-icon-comment {
+  background-position: -128px -96px
+}
+
+.ui-icon-person {
+  background-position: -144px -96px
+}
+
+.ui-icon-print {
+  background-position: -160px -96px
+}
+
+.ui-icon-trash {
+  background-position: -176px -96px
+}
+
+.ui-icon-locked {
+  background-position: -192px -96px
+}
+
+.ui-icon-unlocked {
+  background-position: -208px -96px
+}
+
+.ui-icon-bookmark {
+  background-position: -224px -96px
+}
+
+.ui-icon-tag {
+  background-position: -240px -96px
+}
+
+.ui-icon-home {
+  background-position: 0 -112px
+}
+
+.ui-icon-flag {
+  background-position: -16px -112px
+}
+
+.ui-icon-calendar {
+  background-position: -32px -112px
+}
+
+.ui-icon-cart {
+  background-position: -48px -112px
+}
+
+.ui-icon-pencil {
+  background-position: -64px -112px
+}
+
+.ui-icon-clock {
+  background-position: -80px -112px
+}
+
+.ui-icon-disk {
+  background-position: -96px -112px
+}
+
+.ui-icon-calculator {
+  background-position: -112px -112px
+}
+
+.ui-icon-zoomin {
+  background-position: -128px -112px
+}
+
+.ui-icon-zoomout {
+  background-position: -144px -112px
+}
+
+.ui-icon-search {
+  background-position: -160px -112px
+}
+
+.ui-icon-wrench {
+  background-position: -176px -112px
+}
+
+.ui-icon-gear {
+  background-position: -192px -112px
+}
+
+.ui-icon-heart {
+  background-position: -208px -112px
+}
+
+.ui-icon-star {
+  background-position: -224px -112px
+}
+
+.ui-icon-link {
+  background-position: -240px -112px
+}
+
+.ui-icon-cancel {
+  background-position: 0 -128px
+}
+
+.ui-icon-plus {
+  background-position: -16px -128px
+}
+
+.ui-icon-plusthick {
+  background-position: -32px -128px
+}
+
+.ui-icon-minus {
+  background-position: -48px -128px
+}
+
+.ui-icon-minusthick {
+  background-position: -64px -128px
+}
+
+.ui-icon-close {
+  background-position: -80px -128px
+}
+
+.ui-icon-closethick {
+  background-position: -96px -128px
+}
+
+.ui-icon-key {
+  background-position: -112px -128px
+}
+
+.ui-icon-lightbulb {
+  background-position: -128px -128px
+}
+
+.ui-icon-scissors {
+  background-position: -144px -128px
+}
+
+.ui-icon-clipboard {
+  background-position: -160px -128px
+}
+
+.ui-icon-copy {
+  background-position: -176px -128px
+}
+
+.ui-icon-contact {
+  background-position: -192px -128px
+}
+
+.ui-icon-image {
+  background-position: -208px -128px
+}
+
+.ui-icon-video {
+  background-position: -224px -128px
+}
+
+.ui-icon-script {
+  background-position: -240px -128px
+}
+
+.ui-icon-alert {
+  background-position: 0 -144px
+}
+
+.ui-icon-info {
+  background-position: -16px -144px
+}
+
+.ui-icon-notice {
+  background-position: -32px -144px
+}
+
+.ui-icon-help {
+  background-position: -48px -144px
+}
+
+.ui-icon-check {
+  background-position: -64px -144px
+}
+
+.ui-icon-bullet {
+  background-position: -80px -144px
+}
+
+.ui-icon-radio-on {
+  background-position: -96px -144px
+}
+
+.ui-icon-radio-off {
+  background-position: -112px -144px
+}
+
+.ui-icon-pin-w {
+  background-position: -128px -144px
+}
+
+.ui-icon-pin-s {
+  background-position: -144px -144px
+}
+
+.ui-icon-play {
+  background-position: 0 -160px
+}
+
+.ui-icon-pause {
+  background-position: -16px -160px
+}
+
+.ui-icon-seek-next {
+  background-position: -32px -160px
+}
+
+.ui-icon-seek-prev {
+  background-position: -48px -160px
+}
+
+.ui-icon-seek-end {
+  background-position: -64px -160px
+}
+
+.ui-icon-seek-first,
+.ui-icon-seek-start {
+  background-position: -80px -160px
+}
+
+.ui-icon-stop {
+  background-position: -96px -160px
+}
+
+.ui-icon-eject {
+  background-position: -112px -160px
+}
+
+.ui-icon-volume-off {
+  background-position: -128px -160px
+}
+
+.ui-icon-volume-on {
+  background-position: -144px -160px
+}
+
+.ui-icon-power {
+  background-position: 0 -176px
+}
+
+.ui-icon-signal-diag {
+  background-position: -16px -176px
+}
+
+.ui-icon-signal {
+  background-position: -32px -176px
+}
+
+.ui-icon-battery-0 {
+  background-position: -48px -176px
+}
+
+.ui-icon-battery-1 {
+  background-position: -64px -176px
+}
+
+.ui-icon-battery-2 {
+  background-position: -80px -176px
+}
+
+.ui-icon-battery-3 {
+  background-position: -96px -176px
+}
+
+.ui-icon-circle-plus {
+  background-position: 0 -192px
+}
+
+.ui-icon-circle-minus {
+  background-position: -16px -192px
+}
+
+.ui-icon-circle-close {
+  background-position: -32px -192px
+}
+
+.ui-icon-circle-triangle-e {
+  background-position: -48px -192px
+}
+
+.ui-icon-circle-triangle-s {
+  background-position: -64px -192px
+}
+
+.ui-icon-circle-triangle-w {
+  background-position: -80px -192px
+}
+
+.ui-icon-circle-triangle-n {
+  background-position: -96px -192px
+}
+
+.ui-icon-circle-arrow-e {
+  background-position: -112px -192px
+}
+
+.ui-icon-circle-arrow-s {
+  background-position: -128px -192px
+}
+
+.ui-icon-circle-arrow-w {
+  background-position: -144px -192px
+}
+
+.ui-icon-circle-arrow-n {
+  background-position: -160px -192px
+}
+
+.ui-icon-circle-zoomin {
+  background-position: -176px -192px
+}
+
+.ui-icon-circle-zoomout {
+  background-position: -192px -192px
+}
+
+.ui-icon-circle-check {
+  background-position: -208px -192px
+}
+
+.ui-icon-circlesmall-plus {
+  background-position: 0 -208px
+}
+
+.ui-icon-circlesmall-minus {
+  background-position: -16px -208px
+}
+
+.ui-icon-circlesmall-close {
+  background-position: -32px -208px
+}
+
+.ui-icon-squaresmall-plus {
+  background-position: -48px -208px
+}
+
+.ui-icon-squaresmall-minus {
+  background-position: -64px -208px
+}
+
+.ui-icon-squaresmall-close {
+  background-position: -80px -208px
+}
+
+.ui-icon-grip-dotted-vertical {
+  background-position: 0 -224px
+}
+
+.ui-icon-grip-dotted-horizontal {
+  background-position: -16px -224px
+}
+
+.ui-icon-grip-solid-vertical {
+  background-position: -32px -224px
+}
+
+.ui-icon-grip-solid-horizontal {
+  background-position: -48px -224px
+}
+
+.ui-icon-gripsmall-diagonal-se {
+  background-position: -64px -224px
+}
+
+.ui-icon-grip-diagonal-se {
+  background-position: -80px -224px
+}
+
+.ui-corner-all,
+.ui-corner-left,
+.ui-corner-tl,
+.ui-corner-top {
+  border-top-left-radius: 2px
+}
+
+.ui-corner-all,
+.ui-corner-right,
+.ui-corner-top,
+.ui-corner-tr {
+  border-top-right-radius: 2px
+}
+
+.ui-corner-all,
+.ui-corner-bl,
+.ui-corner-bottom,
+.ui-corner-left {
+  border-bottom-left-radius: 2px
+}
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-br,
+.ui-corner-right {
+  border-bottom-right-radius: 2px
+}
+
+.ui-widget-overlay {
+  background: url(https://www.snhu.edu/assets/SNHU/jquery-ui-1.11.4.custom/images/ui-bg_flat_0_eeeeee_40x100.png) 50% 50% repeat-x #eee;
+  opacity: .8;
+  filter: Alpha(Opacity=80)
+}
+
+.ui-widget-shadow {
+  margin: -4px 0 0 -4px;
+  padding: 4px;
+  background: url(https://www.snhu.edu/assets/SNHU/jquery-ui-1.11.4.custom/images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x #aaa;
+  opacity: .6;
+  filter: Alpha(Opacity=60);
+  border-radius: 0
+}
+
+.ui-datepicker-calendar a:after {
+  display: none
+}
+
+.ui-datepicker-calendar thead tr th {
+  border-radius: 0
+}
+
+.ui-datepicker-calendar tr {
+  border: 0
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+
+.carousel-item>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.drk:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #0a3370;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.carousel-caption {
+  z-index: 2;
+}
+
+.carousel-caption h3 {
+  z-index: 2;
+  color: #fff;
+}
+
+
+
+.carousel-item .active {}
+
+ .btn-secondary-1 {
+  background-color: #0a3370 !important;
+  border-color: #0a3370 !important;
+  color: #fff !important;
+}
+
+.btn-secondary-1:hover {
+  background-color: #fff !important;
+  border-color: #fff !important;
+  color: #0a3370 !important;
+}
+
+
+.btn {
+    padding: 0.9rem 2rem;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+  }  
+   
+   
+    @media screen and (max-width: 991px) {
+    #responsive-image {
+      display: none;
+    } 
+
+    .bgimage {
+      background-image: linear-gradient(to right, rgba(0, 36, 78, 0.9) 100%, rgba(0, 36, 78, 0)),url('https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/1c03aaeb-a375-47e2-9b5d-4ca345cf5a42.gif');
+    }
+  }
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+   @media (max-width: 40em) {
+   .feature-banner {
+  flex-direction : column;
+  }
+   
+   }   
+   
+
+@media (min-width: 40em) {
+  
+  
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+
+
+  /* Footer */
+
+  hr {
+    border-width: 3px
+}
+
+.card {
+    padding: 2% 7%
+}
+
+.social>i {
+    padding: 1%;
+    font-size: 15px
+}
+
+.social>i:hover {
+    color: #957bda;
+    cursor: pointer
+}
+
+.policy>div {
+    padding: 4px
+}
+
+.heading {
+    font-family: 'Titillium Web', sans-serif;
+    color: black
+}
+
+.divider {
+    border-top: 2px solid
+}
+  
+
+
+   }
+
+ </style>
+
+
+
+  <!-- FORM: HEAD SECTION CAMPUS EVENTS -->
+ <!-- FORM: HEAD SECTION -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- THIS SCRIPT NEEDS TO BE LOADED FIRST BEFORE wforms.js -->
+    <script type="text/javascript" data-for="FA__DOMContentLoadedEventDispatch" src="https://snhu.tfaforms.net/js/FA__DOMContentLoadedEventDispatcher.js" defer></script>
+            <script type="text/javascript">
+        document.addEventListener("FA__DOMContentLoaded", function(){
+            const FORM_TIME_START = Math.floor((new Date).getTime()/1000);
+            let formElement = document.getElementById("tfa_0");
+            if (null === formElement) {
+                formElement = document.getElementById("0");
+            }
+            let appendJsTimerElement = function(){
+                let formTimeDiff = Math.floor((new Date).getTime()/1000) - FORM_TIME_START;
+                let cumulatedTimeElement = document.getElementById("tfa_dbCumulatedTime");
+                if (null !== cumulatedTimeElement) {
+                    let cumulatedTime = parseInt(cumulatedTimeElement.value);
+                    if (null !== cumulatedTime && cumulatedTime > 0) {
+                        formTimeDiff += cumulatedTime;
+                    }
+                }
+                let jsTimeInput = document.createElement("input");
+                jsTimeInput.setAttribute("type", "hidden");
+                jsTimeInput.setAttribute("value", formTimeDiff.toString());
+                jsTimeInput.setAttribute("name", "tfa_dbElapsedJsTime");
+                jsTimeInput.setAttribute("id", "tfa_dbElapsedJsTime");
+                jsTimeInput.setAttribute("autocomplete", "off");
+                if (null !== formElement) {
+                    formElement.appendChild(jsTimeInput);
+                }
+            };
+            if (null !== formElement) {
+                if(formElement.addEventListener){
+                    formElement.addEventListener('submit', appendJsTimerElement, false);
+                } else if(formElement.attachEvent){
+                    formElement.attachEvent('onsubmit', appendJsTimerElement);
+                }
+            }
+        });
+    </script>
+
+    <link href="https://snhu.tfaforms.net/dist/form-builder/5.0.0/wforms-layout.css?v=1cbcf9f2603ff7b28f2277ea07fdd1e539442c05" rel="stylesheet" type="text/css" />
+
+    <link href="https://snhu.tfaforms.net/uploads/themes/theme-31.css" rel="stylesheet" type="text/css" />
+    <link href="https://snhu.tfaforms.net/dist/form-builder/5.0.0/wforms-jsonly.css?v=1cbcf9f2603ff7b28f2277ea07fdd1e539442c05" rel="alternate stylesheet" title="This stylesheet activated by javascript" type="text/css" />
+    <script type="text/javascript" src="https://snhu.tfaforms.net/wForms/3.11/js/wforms.js?v=1cbcf9f2603ff7b28f2277ea07fdd1e539442c05"></script>
+    <script type="text/javascript">
+        wFORMS.behaviors.prefill.skip = false;
+    </script>
+        <script type="text/javascript" src="https://snhu.tfaforms.net/wForms/3.11/js/localization-en_US.js?v=1cbcf9f2603ff7b28f2277ea07fdd1e539442c05"></script>
+
+
+  <!--THIS IS THE END OF THE FORM HEAD CODE -->
+
+
+  <!-- FORM: HEAD SECTION Open House-->
+  <!-- FORM: HEAD SECTION -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- THIS SCRIPT NEEDS TO BE LOADED FIRST BEFORE wforms.js -->
+    <script type="text/javascript" data-for="FA__DOMContentLoadedEventDispatch" src="https://snhu.tfaforms.net/js/FA__DOMContentLoadedEventDispatcher.js" defer></script>
+            <script type="text/javascript">
+        document.addEventListener("FA__DOMContentLoaded", function(){
+            const FORM_TIME_START = Math.floor((new Date).getTime()/1000);
+            let formElement = document.getElementById("tfa_0");
+            if (null === formElement) {
+                formElement = document.getElementById("0");
+            }
+            let appendJsTimerElement = function(){
+                let formTimeDiff = Math.floor((new Date).getTime()/1000) - FORM_TIME_START;
+                let cumulatedTimeElement = document.getElementById("tfa_dbCumulatedTime");
+                if (null !== cumulatedTimeElement) {
+                    let cumulatedTime = parseInt(cumulatedTimeElement.value);
+                    if (null !== cumulatedTime && cumulatedTime > 0) {
+                        formTimeDiff += cumulatedTime;
+                    }
+                }
+                let jsTimeInput = document.createElement("input");
+                jsTimeInput.setAttribute("type", "hidden");
+                jsTimeInput.setAttribute("value", formTimeDiff.toString());
+                jsTimeInput.setAttribute("name", "tfa_dbElapsedJsTime");
+                jsTimeInput.setAttribute("id", "tfa_dbElapsedJsTime");
+                jsTimeInput.setAttribute("autocomplete", "off");
+                if (null !== formElement) {
+                    formElement.appendChild(jsTimeInput);
+                }
+            };
+            if (null !== formElement) {
+                if(formElement.addEventListener){
+                    formElement.addEventListener('submit', appendJsTimerElement, false);
+                } else if(formElement.attachEvent){
+                    formElement.attachEvent('onsubmit', appendJsTimerElement);
+                }
+            }
+        });
+    </script>
+
+    <link href="https://snhu.tfaforms.net/dist/form-builder/5.0.0/wforms-layout.css?v=1cbcf9f2603ff7b28f2277ea07fdd1e539442c05" rel="stylesheet" type="text/css" />
+
+    <link href="https://snhu.tfaforms.net/uploads/themes/theme-31.css" rel="stylesheet" type="text/css" />
+    <link href="https://snhu.tfaforms.net/dist/form-builder/5.0.0/wforms-jsonly.css?v=1cbcf9f2603ff7b28f2277ea07fdd1e539442c05" rel="alternate stylesheet" title="This stylesheet activated by javascript" type="text/css" />
+    <script type="text/javascript" src="https://snhu.tfaforms.net/wForms/3.11/js/wforms.js?v=1cbcf9f2603ff7b28f2277ea07fdd1e539442c05"></script>
+    <script type="text/javascript">
+        wFORMS.behaviors.prefill.skip = false;
+    </script>
+        <script type="text/javascript" src="https://snhu.tfaforms.net/wForms/3.11/js/localization-en_US.js?v=1cbcf9f2603ff7b28f2277ea07fdd1e539442c05"></script>
+
+
+
+  <!-- END HEAD SECTION Open House-->
+
+  <!-- FORM: HEAD SECTION Transfer -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- THIS SCRIPT NEEDS TO BE LOADED FIRST BEFORE wforms.js -->
+    <script type="text/javascript" data-for="FA__DOMContentLoadedEventDispatch" src="https://snhu.tfaforms.net/js/FA__DOMContentLoadedEventDispatcher.js" defer></script>
+            <script type="text/javascript">
+        document.addEventListener("FA__DOMContentLoaded", function(){
+            const FORM_TIME_START = Math.floor((new Date).getTime()/1000);
+            let formElement = document.getElementById("tfa_0");
+            if (null === formElement) {
+                formElement = document.getElementById("0");
+            }
+            let appendJsTimerElement = function(){
+                let formTimeDiff = Math.floor((new Date).getTime()/1000) - FORM_TIME_START;
+                let cumulatedTimeElement = document.getElementById("tfa_dbCumulatedTime");
+                if (null !== cumulatedTimeElement) {
+                    let cumulatedTime = parseInt(cumulatedTimeElement.value);
+                    if (null !== cumulatedTime && cumulatedTime > 0) {
+                        formTimeDiff += cumulatedTime;
+                    }
+                }
+                let jsTimeInput = document.createElement("input");
+                jsTimeInput.setAttribute("type", "hidden");
+                jsTimeInput.setAttribute("value", formTimeDiff.toString());
+                jsTimeInput.setAttribute("name", "tfa_dbElapsedJsTime");
+                jsTimeInput.setAttribute("id", "tfa_dbElapsedJsTime");
+                jsTimeInput.setAttribute("autocomplete", "off");
+                if (null !== formElement) {
+                    formElement.appendChild(jsTimeInput);
+                }
+            };
+            if (null !== formElement) {
+                if(formElement.addEventListener){
+                    formElement.addEventListener('submit', appendJsTimerElement, false);
+                } else if(formElement.attachEvent){
+                    formElement.attachEvent('onsubmit', appendJsTimerElement);
+                }
+            }
+        });
+    </script>
+
+    <link href="https://snhu.tfaforms.net/dist/form-builder/5.0.0/wforms-layout.css?v=1cbcf9f2603ff7b28f2277ea07fdd1e539442c05" rel="stylesheet" type="text/css" />
+
+    <link href="https://snhu.tfaforms.net/uploads/themes/theme-31.css" rel="stylesheet" type="text/css" />
+    <link href="https://snhu.tfaforms.net/dist/form-builder/5.0.0/wforms-jsonly.css?v=1cbcf9f2603ff7b28f2277ea07fdd1e539442c05" rel="alternate stylesheet" title="This stylesheet activated by javascript" type="text/css" />
+    <script type="text/javascript" src="https://snhu.tfaforms.net/wForms/3.11/js/wforms.js?v=1cbcf9f2603ff7b28f2277ea07fdd1e539442c05"></script>
+    <script type="text/javascript">
+        wFORMS.behaviors.prefill.skip = false;
+    </script>
+        <script type="text/javascript" src="https://snhu.tfaforms.net/wForms/3.11/js/localization-en_US.js?v=1cbcf9f2603ff7b28f2277ea07fdd1e539442c05"></script>
+
+  <!-- END HEAD SECTION Transfer-->
+
+  <!-- FORM: HEAD SECTION Showcase -->
+  <!-- FORM: HEAD SECTION -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <!-- THIS SCRIPT NEEDS TO BE LOADED FIRST BEFORE wforms.js -->
+  <script type="text/javascript" data-for="FA__DOMContentLoadedEventDispatch"
+    src="https://snhu.tfaforms.net/js/FA__DOMContentLoadedEventDispatcher.js" defer></script>
+  <script type="text/javascript">
+    document.addEventListener("FA__DOMContentLoaded", function () {
+      const FORM_TIME_START = Math.floor((new Date).getTime() / 1000);
+      let formElement = document.getElementById("tfa_0");
+      if (null === formElement) {
+        formElement = document.getElementById("0");
+      }
+      let appendJsTimerElement = function () {
+        let formTimeDiff = Math.floor((new Date).getTime() / 1000) - FORM_TIME_START;
+        let cumulatedTimeElement = document.getElementById("tfa_dbCumulatedTime");
+        if (null !== cumulatedTimeElement) {
+          let cumulatedTime = parseInt(cumulatedTimeElement.value);
+          if (null !== cumulatedTime && cumulatedTime > 0) {
+            formTimeDiff += cumulatedTime;
+          }
+        }
+        let jsTimeInput = document.createElement("input");
+        jsTimeInput.setAttribute("type", "hidden");
+        jsTimeInput.setAttribute("value", formTimeDiff.toString());
+        jsTimeInput.setAttribute("name", "tfa_dbElapsedJsTime");
+        jsTimeInput.setAttribute("id", "tfa_dbElapsedJsTime");
+        jsTimeInput.setAttribute("autocomplete", "off");
+        if (null !== formElement) {
+          formElement.appendChild(jsTimeInput);
+        }
+      };
+      if (null !== formElement) {
+        if (formElement.addEventListener) {
+          formElement.addEventListener('submit', appendJsTimerElement, false);
+        } else if (formElement.attachEvent) {
+          formElement.attachEvent('onsubmit', appendJsTimerElement);
+        }
+      }
+    });
+  </script>
+
+  <link
+    href="https://snhu.tfaforms.net/dist/form-builder/5.0.0/wforms-layout.css?v=eea658864c5389ee1a52a21a74e55d115e9520e8"
+    rel="stylesheet" type="text/css" />
+
+  <link href="https://snhu.tfaforms.net/uploads/themes/theme-31.css" rel="stylesheet" type="text/css" />
+  <link
+    href="https://snhu.tfaforms.net/dist/form-builder/5.0.0/wforms-jsonly.css?v=eea658864c5389ee1a52a21a74e55d115e9520e8"
+    rel="alternate stylesheet" title="This stylesheet activated by javascript" type="text/css" />
+  <script type="text/javascript"
+    src="https://snhu.tfaforms.net/wForms/3.11/js/wforms.js?v=eea658864c5389ee1a52a21a74e55d115e9520e8"></script>
+  <script type="text/javascript">
+    wFORMS.behaviors.prefill.skip = false;
+  </script>
+  <script type="text/javascript"
+    src="https://snhu.tfaforms.net/wForms/3.11/js/localization-en_US.js?v=eea658864c5389ee1a52a21a74e55d115e9520e8"></script>
+
+  <!-- END HEAD SECTION Showcase-->
+  
+   <!-- FORM: HEAD SECTION Accepted -->
+ <!-- FORM: HEAD SECTION -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- THIS SCRIPT NEEDS TO BE LOADED FIRST BEFORE wforms.js -->
+    <script type="text/javascript" data-for="FA__DOMContentLoadedEventDispatch" src="https://snhu.tfaforms.net/js/FA__DOMContentLoadedEventDispatcher.js" defer></script>
+            <script type="text/javascript">
+        document.addEventListener("FA__DOMContentLoaded", function(){
+            const FORM_TIME_START = Math.floor((new Date).getTime()/1000);
+            let formElement = document.getElementById("tfa_0");
+            if (null === formElement) {
+                formElement = document.getElementById("0");
+            }
+            let appendJsTimerElement = function(){
+                let formTimeDiff = Math.floor((new Date).getTime()/1000) - FORM_TIME_START;
+                let cumulatedTimeElement = document.getElementById("tfa_dbCumulatedTime");
+                if (null !== cumulatedTimeElement) {
+                    let cumulatedTime = parseInt(cumulatedTimeElement.value);
+                    if (null !== cumulatedTime && cumulatedTime > 0) {
+                        formTimeDiff += cumulatedTime;
+                    }
+                }
+                let jsTimeInput = document.createElement("input");
+                jsTimeInput.setAttribute("type", "hidden");
+                jsTimeInput.setAttribute("value", formTimeDiff.toString());
+                jsTimeInput.setAttribute("name", "tfa_dbElapsedJsTime");
+                jsTimeInput.setAttribute("id", "tfa_dbElapsedJsTime");
+                jsTimeInput.setAttribute("autocomplete", "off");
+                if (null !== formElement) {
+                    formElement.appendChild(jsTimeInput);
+                }
+            };
+            if (null !== formElement) {
+                if(formElement.addEventListener){
+                    formElement.addEventListener('submit', appendJsTimerElement, false);
+                } else if(formElement.attachEvent){
+                    formElement.attachEvent('onsubmit', appendJsTimerElement);
+                }
+            }
+        });
+    </script>
+
+    <link href="https://snhu.tfaforms.net/dist/form-builder/5.0.0/wforms-layout.css?v=1cbcf9f2603ff7b28f2277ea07fdd1e539442c05" rel="stylesheet" type="text/css" />
+
+    <link href="https://snhu.tfaforms.net/uploads/themes/theme-31.css" rel="stylesheet" type="text/css" />
+    <link href="https://snhu.tfaforms.net/dist/form-builder/5.0.0/wforms-jsonly.css?v=1cbcf9f2603ff7b28f2277ea07fdd1e539442c05" rel="alternate stylesheet" title="This stylesheet activated by javascript" type="text/css" />
+    <script type="text/javascript" src="https://snhu.tfaforms.net/wForms/3.11/js/wforms.js?v=1cbcf9f2603ff7b28f2277ea07fdd1e539442c05"></script>
+    <script type="text/javascript">
+        wFORMS.behaviors.prefill.skip = false;
+    </script>
+        <script type="text/javascript" src="https://snhu.tfaforms.net/wForms/3.11/js/localization-en_US.js?v=1cbcf9f2603ff7b28f2277ea07fdd1e539442c05"></script>
+  
+  <!-- END HEAD SECTION Accepted-->
+  
+  
+</head>
+
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TM57T68Q"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  
+  <!-- PRE-FILL AMPSCRIPT -->
+  <!-- %%[
+var @par, @contactinfo
+  
+set @par = QueryParameter('sfid')
+set @contactinfo = RetrieveSalesforceObjects(
+   "Contact",
+   "FirstName,LastName,Email,MobilePhone,MailingStreet,MailingCity,MailingState,MailingPostalCode,Primary_Educational_Institution__c",
+   "Id", "=", @par ) 
+  
+if RowCount(@contactinfo) == 1 then /* there should only be one row */
+  var @info, @firstName, @lastName, @email, @phone, @mailaddress, @city, @state, @zip, @program,  @rows, @row, @term, @programName, @HighSchoolID, @HighSchoolName
+  set @info = Row(@contactinfo, 1)
+  set @firstName = Field(@info, "FirstName")
+  set @lastName = Field(@info, "LastName")
+  set @email = Field(@info, "Email")
+  set @phone = Field(@info, "MobilePhone")
+  set @mailaddress = Field(@info, "MailingStreet")
+  set @city = Field(@info, "MailingCity")
+  set @state = Field(@info, "MailingState")
+  set @zip = Field(@info, "MailingPostalCode")
+  set @HighSchoolID = Field(@info, "Primary_Educational_Institution__c")
+
+  set @rows = LookupOrderedRows("Opportunity_Salesforce", 1, "CreatedDate DESC", "Contact__c", @par)
+  set @row = row(@rows, 1)
+  set @term = field(@row, "Term_Name__c")
+  set @program = field(@row, "Program__c")
+  set @programName = LookUp("Account_Salesforce", "Name", "Id", @program)
+  set @HighSchoolName = LookUp("Account_Salesforce", "Name", "Id", @HighSchoolID)
+endif
+]%%
+
+<!--END PRE-FILL AMPSCRIPT -->
+
+  <!-- Tab links & AMPscript to pull in specific URL param for event type if it is present -->
+  <!--%%[ 
+var @par2, @openTours, @openHouse, @openTransfer, @openAccepted
+                    
+set @par2 = QueryParameter('t')
+
+IF @par2 == "Tours" THEN
+  SET @openTours = 'tabopen'
+ELSEIF @par2 == "openhouse" THEN
+  SET @openHouse = 'tabopen'
+ELSEIF @par2 == "Transfer" THEN
+  SET @openTransfer = 'tabopen'
+ELSEIF @par2 == "Accepted" THEN
+  SET @openAccepted = 'tabopen'
+ELSE
+  set  @openTours = 'tabopen' /* Set a default value for @openTours if none of the conditions are met */
+ENDIF
+]%% -->
+
+
+
+  <!-- Header + Nav -->
+
+  <header>
+    <div class="py-3 text-bg-dark">
+      <div class="container-fluid">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="https://www.snhu.edu/" target="_blank" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+            <img
+              src="https://client-data.knak.io/production/email_assets/5fd10b569d941/Y9PaAR4BN1uvwQSeUR37Jtdwa2YUrN1By1RZIsk8.png"
+              height="80" alt="SNHU logo">
+          </a>
+          <nav id="nav" aria-label="Main menu" class="">
+            <ul class="nav nav-pills text-bg-dark">
+              <li class="nav-item"><a href="#campusevents" class="nav-link" style="color: #fff;">Campus Events</a></li>
+              <li class="nav-item"><a href="#schedulevisit" class="nav-link" style="color: #fff;">Schedule Visit</a>
+              </li>
+              <li class="nav-item"><a href="#faq" class="nav-link" style="color: #fff;">FAQ</a></li>
+            </ul>
+          </nav>
+  </header>
+
+<section class="p-4" style="background-color:#fdb913;">
+ <div class="container text-center d-flex justify-content-evenly feature-banner">
+   <h1 style="font-size:36px">
+     Featured Campus Event: Accepted Student Days
+   </h1>
+   <div>
+   <a href="https://cloud.dream.snhu.edu/campus-event-listing-directory?t=accepted#campusevents" class="btn btn-secondary-1">
+     Learn More
+   </a>
+      </div>
+  </div>       
+ </section>
+  <!-- Hero-->
+
+
+
+  <!-- This div is intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+  <section class="hero">
+    <div class="overlay"></div>
+
+    <!-- The HTML5 video element that will create the background video on the header -->
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="https://image.dream.snhu.edu/lib/fe9213737461067576/m/1/0626b15d-fb1d-4747-b2b5-1df76d10dc50.mp4"
+        type="video/mp4">
+    </video>
+
+    <!-- The header content -->
+    <div class="container h-100">
+      <div class="d-flex h-100 text-start align-items-center col-lg-9">
+        <div class="w-100 text-white">
+          <h1 class="display-6 py-3 fw-bold" style="color: #fff;">See yourself at SNHU</h1>
+          <p class="lead mb-0">Come visit our 300-acre campus in southern New Hampshire and discover what "just right" feels like. The dorms are beautiful. The stadium is awesome. And everywhere feels like home. Learn more about upcoming tours and events below.</p>
+          <a class="btn btn-lg btn-primary my-3 mt-4" href="#campusevents">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--Tabbed Content Area for Event Types-->
+
+  <div class="container col-md-8 py-5" id="campusevents">
+
+    <div class="row py-5">
+      <h2 style="color: #2066A2;">Join us in person for a campus admission event!</h2>
+      <p>There's no better way to see what SNHU is like than visiting us in person. Click the tabs below to learn more
+        about our different on-campus events and book your visit. We can't wait to meet you! </p>
+    </div>
+
+    <div class="row">
+      <ul class="nav nav-tabs tab flex-column flex-md-row" id="myTab tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link tablinks  active" onclick="openEvent(event, 'Tours')" id="%%=v(@openTours)=%%"
+            id="campus-tab" data-bs-toggle="tab" data-bs-target="#campus" type="button" role="tab"
+            aria-controls="campus" aria-selected="true">Campus Tours</button>
+        </li>
+       <!-- <li class="nav-item" role="presentation">
+          <button class="nav-link tablinks" onclick="openEvent(event, 'Transfer')" id="%%=v(@openTransfer)=%%"
+            id="transfer-tab" data-bs-toggle="tab" data-bs-target="#transfer" type="button" role="tab"
+            aria-controls="transfer" aria-selected="false">Transfer Tuesdays</button>
+        </li> -->
+         <li class="nav-item" role="presentation">
+          <button class="nav-link tablinks" onclick="openEvent(event, 'Accepted')" id="%%=v(@openAccepted)=%%"
+            id="accepted-tab" data-bs-toggle="tab" data-bs-target="#accepted" type="button" role="tab"
+            aria-controls="accepted" aria-selected="false">Accepted Student Days</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="campus" role="tabpanel">
+          <div class="d-lg-inline-flex align-items-center justify-content-center">
+            <div class="py-5">
+              <img
+                src="https://client-data.knak.io/production/email_assets/5fd10b569d941/kmxEUGzpUbtDH5mLRPyUoXFcvxZgHljmGJkUvNOz.png"
+                class="image-fluid" width="300px" alt="SNHU campus">
+            </div>
+            <div class="px-lg-5 py-lg-5">
+              <h3>Campus Tours</h3>
+              <p>Visiting campus is the perfect way to experience everything SNHU has to offer. Here, you can chat with
+                an admission counselor, attend a brief information session and take a one-hour tour.</p>
+              <p>Campus tours are offered Monday through Friday at 9 am, 11:30 am and 2 pm. </p>
+              <p>
+                Upcoming 2024 weekend tour dates include: Saturday, April 20, and Sunday, April 28. Weekend tours are at 11 am and 1:30 pm.
+              </p>
+<p>
+  Upcoming 2024 Twilight Tour dates include: Thursday, March 28, Wednesday, April 17, Thursday, April 25, and Tuesday, April 30. Twilight Tours are at 4:30 pm.
+              </p>
+              <a class="btn btn-primary my-3" href="#schedulevisit">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade " id="openhouse" role="tabpanel">
+          <div class="d-lg-inline-flex align-items-center justify-content-center">
+            <div class="py-5">
+              <img
+                src="https://client-data.knak.io/production/email_assets/5fd10b569d941/u8qVQjr3fNHqPMJG6gUKjWGvnFcJoajqMhf4z5U1.png"
+                class="image-fluid" width="300px" alt="Students walking on campus in the fall">
+            </div>
+            Event Banner <div class="px-lg-5 py-lg-5">
+              <h3>Open Houses</h3>
+              <p>This fall, we’re excited to offer four open house events to help students and families explore specific areas of study at SNHU:</p>
+              <ul>
+                <li>Friday, October 27, 2023 – School of Engineering, Technology and Aeronautics</li>
+                <li>Sunday, November 5, 2023 – All Programs</li>
+                <li>Friday, November 17, 2023 – School of Business</li>
+                <li>Friday, December 1, 2023 – School of Arts, Sciences and Education</li>
+              </ul>
+              <p>Our general open house on November 5 will provide information on all our academic programs, making it ideal for students who are undecided about their intended major.</p>
+              <p>All open houses will introduce students to life at SNHU and cover topics such as academics, involvement, residence life, community and more.</p>
+              <a class="btn btn-primary my-3" href="#schedulevisit">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="transfer" role="tabpanel">
+          <div class="d-lg-inline-flex align-items-center justify-content-center">
+            <div class="py-5">
+              <img
+                src="https://client-data.knak.io/production/email_assets/5fd10b569d941/89VJb85hnizOLv2KzSEJ8H0VxVwpkrDlP5cic2n0.png"
+                class="image-fluid" width="300px" alt="Campus building in the spring">
+            </div> 
+            
+            <div class="px-lg-5 py-lg-5">
+              <h3>Transfer Tuesdays</h3>
+              <p>Thinking about transferring to SNHU? We can help you complete your application process on site, review
+                your admission decision and transfer credit evaluation, and answer all your questions about your
+                specific transfer pathway to complete your bachelor’s degree with SNHU.</p>
+              <p>Upcoming 2024 Transfer Tuesday dates include: February 13, March 12, April 9 and May 15. Schedule a one-on-one appointment with a transfer admission counselor below.</p>
+              <a class="btn btn-primary my-3" href="#schedulevisit">Book Now</a>
+            </div>
+          </div>
+        </div>
+            <div class="tab-pane fade" id="accepted" role="tabpanel">
+          <div class="d-lg-inline-flex justify-content-center" >
+            <div class="py-5">
+              <img
+                src="https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/e3fecde2-35a9-42f2-b369-563a461775ad.jpg"
+                class="image-fluid " id="responsive-image" width="300px" style="height: 655px;"  alt="Campus building in the spring">
+            </div>
+            
+            <div class="px-lg-5 py-lg-5">
+              <h3>Accepted Student Days</h3>
+              <p>PLEASE NOTE: Pre-registration for the March 23 Accepted Student Day is now closed. If you haven't pre-registered, you can register on site on the day of the event! Please arrive at the Athletic Complex (Building C on the <a href="https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/610910b5-4972-41f7-9194-d1ed71aa2936.pdf" >campus map</a>) at 9:00 am to register and check in. We look forward to seeing you!</p>
+              <p>Join the Office of Admission for an exciting day celebrating our accepted students and experience life as a Penman!</p>
+               <p>2024 Accepted Student Day dates include Saturday, March 23; Sunday, April 7, and Saturday, April 13. Events run from 9:00 am to 2:00 pm.</p>
+              
+               <strong>Each student to attend will receive a free long-sleeve tech shirt!</strong>
+              <br><br>
+              <p>Students get to:</p>
+
+              <ul class="ps-3">
+                <li>Attend academic sessions with faculty</li>
+                <li>Participate in student life activities</li>
+                <li>Have lunch and visit the Campus Resource Fair</li>
+                <li>Take a tour of our campus or residence halls</li>
+              </ul>
+
+              <p>Breakout sessions for families and supporters include:</p>
+
+              <ul class="ps-3">
+                <li>Public Safety & Residence Life</li>
+                <li>Academic Advising & Career Development</li>
+                <li>First Generation Learners</li>
+                <li>Diversity & Inclusivity</li>
+              </ul>
+
+              <p>Families and supporters can also:</p>
+
+              <ul class="ps-3">
+                <li>Make appointments with financial aid</li>
+                <li>Meet current students and staff</li>
+                <li>Explore our bookstore, esports arena and the Wolak Learning Center</li>
+              </ul>
+
+             
+              <p>
+              
+              </p>
+              <a class="btn btn-primary my-3" href="#schedulevisit">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!--Form-->
+
+   <div class="container-fluid bg-light" id="schedulevisit">
+
+    <div id="Tours" class="tabcontent">
+      <script>
+        /*Function to display conditional form fields - also applies "required" status to the non-prefill fields when no SFID is available*/
+        var queryURL = window.location.search;
+        var urlParam = new URLSearchParams(queryURL);
+        var URLsfid = urlParam.get('sfid')
+        function conditionalFields(URLsfid) {
+          if (URLsfid == null) {
+
+            document.querySelector("#tfa_26").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_26").setAttribute("class", "required");
+            document.querySelector("#tfa_23").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_23").setAttribute("class", "required");
+            document.querySelector("#tfa_24").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_24").setAttribute("class", "required");
+            document.querySelector("#tfa_25").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_25").setAttribute("class", "required");
+            document.querySelector("#tfa_84").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_84").setAttribute("class", "required");
+          } else if (URLsfid == '') {
+
+            document.querySelector("#tfa_26").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_26").setAttribute("class", "required");
+            document.querySelector("#tfa_23").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_23").setAttribute("class", "required");
+            document.querySelector("#tfa_24").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_24").setAttribute("class", "required");
+            document.querySelector("#tfa_25").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_25").setAttribute("class", "required");
+            document.querySelector("#tfa_84").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_84").setAttribute("class", "required");
+          } else {
+
+            document.querySelector("#PrePopFields").classList.add("HidePrePopFields");
+
+          }
+
+        }
+
+        /*END conditional form field Function*/
+      </script>
+      <div>
+         <!-- START FORM: BODY SECTION -->
+        <div class="wFormContainer">
+          <div class="wFormHeader"></div>
+          <style type="text/css"></style>
+          <div class="">
+            <div class="wForm" id="278-WRPR" dir="ltr">
+              <div class="codesection" id="code-278">
+              </div>
+              <h3 class="wFormTitle" data-testid="form-title" id="278-T">Register for a campus tour</h3>
+              <form method="post" action="https://snhu.tfaforms.net/api_v2/workflow/processor"
+                class="hintsBelow labelsAbove" id="278" role="form">
+                <div id="tfa_20" class="section group wf-acl-hidden">
+                  <div class="oneField field-container-D    " id="tfa_93-D">
+                    <label id="tfa_93-L" class="label preField " for="tfa_93">NULL field</label><br>
+                    <div class="inputWrapper"><input type="text" id="tfa_93" name="tfa_93" value="" title="NULL field"
+                        class=""></div>
+                  </div>
+                  <div class="oneField field-container-D    " id="tfa_4-D">
+                    <label id="tfa_4-L" class="label preField " for="tfa_4">Event Settings</label><br>
+                    <div class="inputWrapper"><input type="text" id="tfa_4" name="tfa_4" value="a3L3l000000xySREAY"
+                        default="a3L3l000000xySREAY" title="Event Settings" class=""></div>
+                  </div>
+                  <div class="oneField field-container-D    " id="tfa_19-D">
+                    <label id="tfa_19-L" class="label preField " for="tfa_19">Contact SFID</label><br>
+                    <div class="inputWrapper"><input type="text" id="tfa_19" name="tfa_19" value="%%=v(@par)=%%"
+                        title="Contact SFID" class="calc-contactSFID"></div>
+                  </div>
+                  <div class="oneField field-container-D    " id="tfa_94-D">
+                    <label id="tfa_94-L" class="label preField " for="tfa_94">Program SFID</label><br>
+                    <div class="inputWrapper"><input type="text" id="tfa_94" name="tfa_94" value="" title="Program SFID"
+                        class=""></div>
+                  </div>
+                </div>
+                <p style="margin-left:5px; font-size:16px; font-weight:600;">
+    Student information:
+  </p>
+                <div class="oneField field-container-D    " style="float:left;"id="tfa_1-D">
+                  <label id="tfa_1-L" class="label preField reqMark" for="tfa_1">First Name</label><br>
+                  <div class="inputWrapper"><input aria-required="true" type="text" id="tfa_1" name="tfa_1"
+                      value="%%=v(@firstName)=%%" title="First Name" class="required"></div>
+                </div>
+                <div class="oneField field-container-D    " style="float:left;" id="tfa_109-D">
+<label id="tfa_109-L" class="label preField " for="tfa_109">Preferred First Name</label><br><div class="inputWrapper"><input type="text" id="tfa_109" name="tfa_109" value="" title="Preferred First Name" class=""></div>
+</div>
+                <div class="oneField field-container-D    " style="float:left;"id="tfa_2-D">
+                  <label id="tfa_2-L" class="label preField reqMark" for="tfa_2">Last Name</label><br>
+                  <div class="inputWrapper"><input aria-required="true" type="text" id="tfa_2" name="tfa_2"
+                      value="%%=v(@lastName)=%%" title="Last Name" class="required"></div>
+                </div>
+                <div class="oneField field-container-D    " style="float:left;"id="tfa_3-D">
+                  <label id="tfa_3-L" class="label preField reqMark" for="tfa_3">Email</label><br>
+                  <div class="inputWrapper"><input aria-required="true" type="text" id="tfa_3" name="tfa_3"
+                      value="%%=v(@email)=%%" title="Email" class="required"></div>
+                </div>
+                <div Id="PrePopFields">
+                  <div id="tfa_92" class="section group">
+                    <div class="oneField field-container-D    " style="float:left;"id="tfa_23-D">
+                      <label id="tfa_23-L" class="label preField reqMark" for="tfa_23">Phone</label><br>
+                      <div class="inputWrapper"><input type="text" id="tfa_23" name="tfa_23" value="%%=v(@phone)=%%"
+                          title="Phone"></div>
+                    </div>
+                    <div class="oneField field-container-D    " style="float:left;"id="tfa_24-D">
+                      <label id="tfa_24-L" class="label preField reqMark" for="tfa_24">Mailing Address</label><br>
+                      <div class="inputWrapper"><input type="text" id="tfa_24" name="tfa_24"
+                          value="%%=v(@mailaddress)=%%" title="Mailing Address"></div>
+                    </div>
+                    <div class="oneField field-container-D    " style="float:left;"id="tfa_25-D">
+                      <label id="tfa_25-L" class="label preField reqMark" for="tfa_25">City</label><br>
+                      <div class="inputWrapper"><input type="text" id="tfa_25" name="tfa_25" value="%%=v(@city)=%%"
+                          title="City"></div>
+                    </div>
+
+                    <div class="oneField field-container-D    " style="float:left;"id="tfa_26-D">
+                      <label id="tfa_26-L" class="label preField reqMark" for="tfa_26">State</label><br>
+                      <div class="inputWrapper"><select id="tfa_26" name="tfa_26" title="State">
+                          <option value="">Please select...</option>
+                          <option value="tfa_27" id="tfa_27" class="">Alabama</option>
+                          <option value="tfa_28" id="tfa_28" class="">Alaska</option>
+                          <option value="tfa_29" id="tfa_29" class="">Arizona</option>
+                          <option value="tfa_30" id="tfa_30" class="">Arkansas</option>
+                          <option value="tfa_31" id="tfa_31" class="">California</option>
+                          <option value="tfa_32" id="tfa_32" class="">Colorado</option>
+                          <option value="tfa_33" id="tfa_33" class="">Connecticut</option>
+                          <option value="tfa_34" id="tfa_34" class="">Delaware</option>
+                          <option value="tfa_35" id="tfa_35" class="">District Of Columbia</option>
+                          <option value="tfa_36" id="tfa_36" class="">Florida</option>
+                          <option value="tfa_37" id="tfa_37" class="">Georgia</option>
+                          <option value="tfa_38" id="tfa_38" class="">Hawaii</option>
+                          <option value="tfa_39" id="tfa_39" class="">Idaho</option>
+                          <option value="tfa_40" id="tfa_40" class="">Illinois</option>
+                          <option value="tfa_41" id="tfa_41" class="">Indiana</option>
+                          <option value="tfa_42" id="tfa_42" class="">Iowa</option>
+                          <option value="tfa_43" id="tfa_43" class="">Kansas</option>
+                          <option value="tfa_44" id="tfa_44" class="">Kentucky</option>
+                          <option value="tfa_45" id="tfa_45" class="">Louisiana</option>
+                          <option value="tfa_46" id="tfa_46" class="">Maine</option>
+                          <option value="tfa_47" id="tfa_47" class="">Maryland</option>
+                          <option value="tfa_48" id="tfa_48" class="">Massachusetts</option>
+                          <option value="tfa_49" id="tfa_49" class="">Michigan</option>
+                          <option value="tfa_50" id="tfa_50" class="">Minnesota</option>
+                          <option value="tfa_51" id="tfa_51" class="">Mississippi</option>
+                          <option value="tfa_52" id="tfa_52" class="">Missouri</option>
+                          <option value="tfa_53" id="tfa_53" class="">Montana</option>
+                          <option value="tfa_54" id="tfa_54" class="">Nebraska</option>
+                          <option value="tfa_55" id="tfa_55" class="">Nevada</option>
+                          <option value="tfa_56" id="tfa_56" class="">New Hampshire</option>
+                          <option value="tfa_57" id="tfa_57" class="">New Jersey</option>
+                          <option value="tfa_58" id="tfa_58" class="">New Mexico</option>
+                          <option value="tfa_59" id="tfa_59" class="">New York</option>
+                          <option value="tfa_60" id="tfa_60" class="">North Carolina</option>
+                          <option value="tfa_61" id="tfa_61" class="">North Dakota</option>
+                          <option value="tfa_62" id="tfa_62" class="">Ohio</option>
+                          <option value="tfa_63" id="tfa_63" class="">Oklahoma</option>
+                          <option value="tfa_64" id="tfa_64" class="">Oregon</option>
+                          <option value="tfa_65" id="tfa_65" class="">Pennsylvania</option>
+                          <option value="tfa_66" id="tfa_66" class="">Rhode Island</option>
+                          <option value="tfa_67" id="tfa_67" class="">South Carolina</option>
+                          <option value="tfa_68" id="tfa_68" class="">South Dakota</option>
+                          <option value="tfa_69" id="tfa_69" class="">Tennessee</option>
+                          <option value="tfa_70" id="tfa_70" class="">Texas</option>
+                          <option value="tfa_71" id="tfa_71" class="">Utah</option>
+                          <option value="tfa_72" id="tfa_72" class="">Vermont</option>
+                          <option value="tfa_73" id="tfa_73" class="">Virginia</option>
+                          <option value="tfa_74" id="tfa_74" class="">Washington</option>
+                          <option value="tfa_75" id="tfa_75" class="">West Virginia</option>
+                          <option value="tfa_76" id="tfa_76" class="">Wisconsin</option>
+                          <option value="tfa_77" id="tfa_77" class="">Wyoming</option>
+                          <option value="tfa_78" id="tfa_78" class="">Puerto Rico</option>
+                          <option value="tfa_79" id="tfa_79" class="">Virgin Island</option>
+                          <option value="tfa_80" id="tfa_80" class="">Northern Mariana Islands</option>
+                          <option value="tfa_81" id="tfa_81" class="">Guam</option>
+                          <option value="tfa_82" id="tfa_82" class="">American Samoa</option>
+                          <option value="tfa_83" id="tfa_83" class="">Palau</option>
+                        </select></div>
+                    </div>
+                    <div class="oneField field-container-D    " style="float:left;"id="tfa_84-D">
+                      <label id="tfa_84-L" class="label preField reqMark" for="tfa_84">Zip</label><br>
+                      <div class="inputWrapper"><input type="text" id="tfa_84" name="tfa_84" value="%%=v(@zip)=%%"
+                          title="Zip"></div>
+                    </div>
+                  </div>
+                </div>
+                <div id="tfa_98" class="section group wf-acl-hidden">
+                  <div class="oneField field-container-D    " style="float:left;"id="tfa_96-D">
+                    <label id="tfa_96-L" class="label preField " for="tfa_96">Pre-Pop State</label><br>
+                    <div class="inputWrapper"><input type="text" id="tfa_96" name="tfa_96" value="%%=v(@state)=%%"
+                        title="Pre-Pop State" class=""></div>
+                  </div>
+                  <div class="oneField field-container-D    " style="float:left;"id="tfa_88-D">
+                    <label id="tfa_88-L" class="label preField " for="tfa_88">Program of Interest</label><br>
+                    <div class="inputWrapper"><input type="text" id="tfa_88" name="tfa_88" value="%%=v(@programName)=%%"
+                        title="Program of Interest" class=""></div>
+                  </div>
+                  <div class="oneField field-container-D    " style="float:left;"id="tfa_85-D">
+                    <label id="tfa_85-L" class="label preField " for="tfa_85">Intended Term Start</label><br>
+                    <div class="inputWrapper"><input type="text" id="tfa_85" name="tfa_85" value="%%=v(@term)=%%"
+                        title="Intended Term Start" class=""></div>
+                  </div>
+                </div>
+                <div class="oneField field-container-D    " style="float:left;"id="tfa_90-D">
+                  <label id="tfa_90-L" class="label preField reqMark" for="tfa_90">High School Attended</label><br>
+                  <div class="inputWrapper"><input aria-required="true" type="text" id="tfa_90" name="tfa_90"
+                      value="%%=v(@HighSchoolName)=%%" title="High School Attended" class="required"></div>
+                </div>
+               
+                <p style="margin-left:5px; font-size:16px; font-weight:600;">
+    Event details:
+  </p>
+                <div class="oneField field-container-D    " style="float:left;"id="tfa_5-D">
+                  <label id="tfa_5-L" class="label preField reqMark" for="tfa_5">Event Date</label><br>
+                  <div class="inputWrapper"><input aria-required="true" type="text" id="tfa_5" name="tfa_5" value=""
+                      title="Event Date" placeholder="Please select a date" class="calc-eventDateStart required"readonly></div>
+                </div>
+
+                <div class="oneField field-container-D    " style="float:left;"id="tfa_7-D">
+                  <label id="tfa_7-L" class="label preField reqMark" for="tfa_7">Available Times</label><br>
+                  <div class="inputWrapper"><select aria-required="true" id="tfa_7" name="tfa_7" title="Available Times"
+                      class="calc-weekdayTimes required">
+                      <option value=""></option>
+                    </select></div>
+                </div>
+                <div class="oneField field-container-D    " style="float:left;"id="tfa_89-D">
+                  <label id="tfa_89-L" class="label preField reqMark" for="tfa_89">Number of Guests (excluding
+                    yourself)</label><br>
+                  <div class="inputWrapper"><input aria-required="true" type="text" id="tfa_89" name="tfa_89" value=""
+                      title="Number of Guests (excluding yourself)" class="required"></div>
+                </div>
+                <div class="oneField field-container-D    " style="float:left;"id="tfa_99-D">
+                  <label id="tfa_99-L" class="label preField " for="tfa_99">Parent/Supporter Name (Optional)</label><br>
+                  <div class="inputWrapper"><input type="text" id="tfa_99" name="tfa_99" value=""
+                      title="Parent/Supporter Name (Optional)" class=""></div>
+                </div>
+                <div class="oneField field-container-D    " style="float:left;" id="tfa_101-D">
+                  <label id="tfa_101-L" class="label preField " for="tfa_101">Parent/Supporter Email
+                    (Optional)</label><br>
+                  <div class="inputWrapper"><input type="text" id="tfa_101" name="tfa_101" value=""
+                      title="Parent/Supporter Email (Optional)" class=""></div>
+                </div>
+              
+                  
+               
+                
+                
+                <div id="tfa_107" class="section inline group">
+<div class="oneField field-container-D    " id="tfa_103-D">
+  <p style="margin-bottom:10px; font-size:16px; font-weight:600;" >
+    Transfer information:
+  </p>
+<label id="tfa_103-L" class="label preField reqMark" for="tfa_103">Have You Completed More than 12 College Credits?</label><br><div class="inputWrapper"><select aria-required="true" id="tfa_103" name="tfa_103" title="Have You Completed More than 12 College Credits?" class="required"><option value="">Please select...</option>
+<option value="tfa_104" id="tfa_104" data-conditionals="#tfa_106" class="">Yes</option>
+<option value="tfa_105" id="tfa_105" class="">No</option></select></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_106-D">
+<label id="tfa_106-L" class="label preField reqMark" for="tfa_106">Name of College or University Previously Attended</label><br><div class="inputWrapper"><input aria-required="true" type="text" id="tfa_106" name="tfa_106" value="" data-condition="`#tfa_104`" title="Name of College or University Previously Attended" class="required"></div>
+</div>
+</div>
+                <div class="htmlSection" id="tfa_95">
+                  <div class="htmlContent" id="tfa_95-HTML">By clicking "Register," I agree to receive emails, phone
+                    calls, and SMS/text messages from Southern New Hampshire University (SNHU) at the numbers I provided
+                    (land and/or wireless), including calls or texts made using automated technology or prerecorded
+                    voice messages. This consent is not required to purchase services. You may also call SNHU at
+                    800.668.1249. Terms and Conditions apply.</div>
+                </div>
+                <div class="actions" id="278-A"><input type="submit" data-label="Register" class="primaryAction" id="submit_button" value="Register" onclick="dataLayer.push({'event': 'Register_Submit'});"></div>
+                <div style="clear:both"></div>
+                <input type="hidden" value="278" name="tfa_dbFormId" id="tfa_dbFormId"><input type="hidden" value=""
+                  name="tfa_dbResponseId" id="tfa_dbResponseId"><input type="hidden"
+                  value="f398c2f0cdbd8a3294f91d5753f91903" name="tfa_dbControl" id="tfa_dbControl"><input type="hidden"
+                  value="" name="tfa_dbWorkflowSessionUuid" id="tfa_dbWorkflowSessionUuid"><input type="hidden"
+                  value="47" name="tfa_dbVersionId" id="tfa_dbVersionId"><input type="hidden" value=""
+                  name="tfa_switchedoff" id="tfa_switchedoff">
+                
+              </form></div>
+          </div>
+          <div class="wFormFooter"></div>
+        </div>
+        <!-- THIS IS THE END OF FA BODY CODE -->
+        <script>conditionalFields(URLsfid)
+        </script>
+<script
+    id="open-telemetry-script"
+    type="text/javascript"
+    src="https://snhu.tfaforms.net/dist/open-telemetry/open-telemetry.3e6c1bedaa7fb4452dd0.js"
+    data-customer-id="30021"
+    data-exporter-url="https://us-east-1-otel.formassembly.com/v1/traces"
+    data-exporter-console="0"
+></script>
+<script src="https://snhu.tfaforms.net/api_v2/sst/copy-and-paste"></script>
+      </div>
+
+
+      <div id="evtlist">
+        <script runat="server">
+          Platform.Load("core", "1");
+          var type = "tours";
+
+          var OrdersDE = DataExtension.Init("DE-UC-Campus-Tours-Calendar-Dates");
+          var rows = OrdersDE.Rows.Lookup(["Event_Type"], [type]);
+          var result = '';
+
+          if (rows.length >= 1) {
+            for (var i = 0; i < rows.length; i++) {
+              var orderItem = rows[i]["StartDate"];
+              result += "'" + orderItem + "', ";
+            }
+          } else {
+            result = "No items to display";
+          }
+
+        </script>
+      </div>
+      <script>
+        $(function () {
+          var datelist = ("<ctrl:var name=result/>")
+
+          // Specify the selectable dates as an array
+          var selectableDates = ("<ctrl:var name=result/>");
+
+          // Function to check if the given date is a weekend
+          function isWeekend(date) {
+            var day = date.getDay();
+            return day === 0 || day === 6;
+          }
+          
+   // Function to check if the given date is one of the special dates
+        function isSpecialDate(date) {
+            var formattedDate = $.datepicker.formatDate('mm-dd-yy', date);
+            return formattedDate === '03-28-2024' || formattedDate === '04-17-2024' || formattedDate === '04-25-2024' || formattedDate === '04-30-2024';
+        }
+          
+          // Function to check if the given date is one of the special dates
+        function isSpecialDate2(date) {
+            var formattedDate2 = $.datepicker.formatDate('mm-dd-yy', date);
+            return formattedDate2 >= '06-01-2024';
+        }
+
+
+          // Get the first available date
+          var firstAvailableDate = new Date(selectableDates[0]);
+
+          $("#tfa_5").datepicker({
+            beforeShowDay: function (date) {
+              // Format the current date to match the selectable dates format
+              var formattedDate = $.datepicker.formatDate('yy-mm-dd', date);
+
+              // Check if the current date is in the selectable dates array
+              if (selectableDates.indexOf(formattedDate) != -1) {
+                // Return an array with the CSS class and tooltip for selectable dates
+                return [true, 'selectable', 'Selectable date'];
+              } else {
+                // Return an array with the CSS class and tooltip for non-selectable dates
+                return [false, 'non-selectable', 'Non-selectable date'];
+              }
+            },
+            defaultDate: firstAvailableDate
+          });
+
+          // Change the available times based on weekday/weekend
+          $("#tfa_5").on("change", function () {
+            var selectedDate = $("#tfa_5").datepicker("getDate");
+            var isWeekendSelected = isWeekend(selectedDate);
+            var isSpecialDateSelected = isSpecialDate(selectedDate);
+            var isSpecialDateSelected2 = isSpecialDate2(selectedDate);
+
+            // Clear previous options
+            $("#tfa_7").empty();
+
+            
+            if (isWeekendSelected) {
+                $("#tfa_7").append('<option value="tfa_22" id="tfa_22" class="">11am</option>');
+                $("#tfa_7").append('<option value="tfa_21" id="tfa_21" class="">1:30pm</option>');
+            } else if (isSpecialDateSelected2){
+                $("#tfa_7").append('<option value="tfa_8" id="tfa_8" class="">10am</option>');
+                $("#tfa_7").append('<option value="tfa_9" id="tfa_9" class="">2pm</option>');
+            } 
+            else {
+                $("#tfa_7").append('<option value="tfa_8" id="tfa_8" class="">9am</option>');
+                $("#tfa_7").append('<option value="tfa_9" id="tfa_9" class="">11:30am</option>');
+                $("#tfa_7").append('<option value="tfa_10" id="tfa_10" class="">2pm</option>');
+            }
+             if (isSpecialDateSelected) {
+                $("#tfa_7").append('<option value="tfa_102" id="tfa_102" class="">4:30pm</option>');
+            }
+
+          });
+        });
+      </script>
+    </div>
+
+
+    <div id="OpenHouse" class="tabcontent hidden">
+      <script>
+        /*Function to display conditional form fields - also applies "required" status to the non-prefill fields when no SFID is available*/
+        var queryURL2 = window.location.search;
+        var urlParam2 = new URLSearchParams(queryURL2);
+        var URLsfid2 = urlParam2.get('sfid')
+
+        function conditionalFields(URLsfid2) {
+          if (URLsfid2 == null) {
+
+            document.querySelector("#tfa_262").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_262").setAttribute("class", "required");
+            document.querySelector("#tfa_232").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_232").setAttribute("class", "required");
+            document.querySelector("#tfa_242").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_242").setAttribute("class", "required");
+            document.querySelector("#tfa_252").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_252").setAttribute("class", "required");
+            document.querySelector("#tfa_842").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_842").setAttribute("class", "required");
+          } else if (URLsfid2 == '') {
+
+            document.querySelector("#tfa_262").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_262").setAttribute("class", "required");
+            document.querySelector("#tfa_232").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_232").setAttribute("class", "required");
+            document.querySelector("#tfa_242").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_242").setAttribute("class", "required");
+            document.querySelector("#tfa_252").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_252").setAttribute("class", "required");
+            document.querySelector("#tfa_842").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_842").setAttribute("class", "required");
+          } else {
+
+            document.querySelector("#PrePopFields2").classList.add("HidePrePopFields");
+
+          }
+
+        }
+
+        /*END conditional form field Function*/
+      </script>
+
+      <!-- FORM: BODY SECTION -->
+      <div class="wFormContainer">
+        <div class="wFormHeader"></div>
+        <style type="text/css"></style>
+        <div class="">
+          <div class="wForm" id="5054797-WRPR" dir="ltr">
+            <div class="codesection" id="code-5054797"></div>
+            <h3 class="wFormTitle" data-testid="form-title" id="5054797-T">Book your Open House</h3>
+            <form method="post" action="https://snhu.tfaforms.net/api_v2/workflow/processor"
+              class="hintsBelow labelsAbove" id="5054797" role="form">
+              <div id="tfa_20" class="section group wf-acl-hidden">
+                <div class="oneField field-container-D    " id="tfa_93-D">
+                  <label id="tfa_93-L" class="label preField " for="tfa_93">NULL field</label><br>
+                  <div class="inputWrapper"><input type="text" id="tfa_93" name="tfa_93" value="" title="NULL field"
+                      class=""></div>
+                </div>
+                <div class="oneField field-container-D    " id="tfa_4-D">
+                  <label id="tfa_4-L" class="label preField " for="tfa_4">Event Settings</label><br>
+                  <div class="inputWrapper"><input type="text" id="tfa_4" name="tfa_4" value="Open House"
+                      default="Open House" title="Event Settings" class=""></div>
+                </div>
+                <div class="oneField field-container-D    " id="tfa_19-D">
+                  <label id="tfa_19-L" class="label preField " for="tfa_19">Contact SFID</label><br>
+                  <div class="inputWrapper"><input type="text" id="tfa_19" name="tfa_19" value="%%=v(@par)=%%"
+                      title="Contact SFID" class="calc-contactSFID"></div>
+                </div>
+                <div class="oneField field-container-D    " id="tfa_94-D">
+                  <label id="tfa_94-L" class="label preField " for="tfa_94">Program SFID</label><br>
+                  <div class="inputWrapper"><input type="text" id="tfa_94" name="tfa_94" value="" title="Program SFID"
+                      class=""></div>
+                </div>
+              </div>
+              <div class="oneField field-container-D    " id="tfa_1-D">
+                <label id="tfa_1-L" class="label preField reqMark" for="tfa_1">First Name</label><br>
+                <div class="inputWrapper"><input aria-required="true" type="text" id="tfa_1" name="tfa_1"
+                    value="%%=v(@firstname)=%%" title="First Name" class="required"></div>
+              </div>
+              <div class="oneField field-container-D    " id="tfa_2-D">
+                <label id="tfa_2-L" class="label preField reqMark" for="tfa_2">Last Name</label><br>
+                <div class="inputWrapper"><input aria-required="true" type="text" id="tfa_2" name="tfa_2"
+                    value="%%=v(@lastname)=%%" title="Last Name" class="required"></div>
+              </div>
+              <div class="oneField field-container-D    " id="tfa_3-D">
+                <label id="tfa_3-L" class="label preField reqMark" for="tfa_3">Email</label><br>
+                <div class="inputWrapper"><input aria-required="true" type="text" id="tfa_3" name="tfa_3"
+                    value="%%=v(@email)=%%" title="Email" class="required"></div>
+              </div>
+              <div Id="PrePopFields2">
+                <div id="tfa_92" class="section group">
+                  <div class="oneField field-container-D    " id="tfa_23-D">
+                    <label id="tfa_23-L" class="label preField reqMark" for="tfa_23">Phone</label><br>
+                    <div class="inputWrapper"><input type="text" id="tfa_232" name="tfa_23" value="%%=v(@phone)=%%"
+                        title="Phone"></div>
+                  </div>
+                  <div class="oneField field-container-D    " id="tfa_24-D">
+                    <label id="tfa_24-L" class="label preField reqMark" for="tfa_24">Mailing Address</label><br>
+                    <div class="inputWrapper"><input type="text" id="tfa_242" name="tfa_24"
+                        value="%%=v(@mailaddress)=%%" title="Mailing Address"></div>
+                  </div>
+                  <div class="oneField field-container-D    " id="tfa_25-D">
+                    <label id="tfa_25-L" class="label preField reqMark" for="tfa_25">City</label><br>
+                    <div class="inputWrapper"><input type="text" id="tfa_252" name="tfa_25" value="%%=v(@city)=%%"
+                        title="City"></div>
+                  </div>
+                  <div class="oneField field-container-D    " id="tfa_26-D">
+                    <label id="tfa_26-L" class="label preField reqMark" for="tfa_26">State</label><br>
+                    <div class="inputWrapper"><select id="tfa_262" name="tfa_26" title="State">
+                        <option value="">Please select...</option>
+                        <option value="tfa_27" id="tfa_27" class="">Alabama</option>
+                        <option value="tfa_28" id="tfa_28" class="">Alaska</option>
+                        <option value="tfa_29" id="tfa_29" class="">Arizona</option>
+                        <option value="tfa_30" id="tfa_30" class="">Arkansas</option>
+                        <option value="tfa_31" id="tfa_31" class="">California</option>
+                        <option value="tfa_32" id="tfa_32" class="">Colorado</option>
+                        <option value="tfa_33" id="tfa_33" class="">Connecticut</option>
+                        <option value="tfa_34" id="tfa_34" class="">Delaware</option>
+                        <option value="tfa_35" id="tfa_35" class="">District Of Columbia</option>
+                        <option value="tfa_36" id="tfa_36" class="">Florida</option>
+                        <option value="tfa_37" id="tfa_37" class="">Georgia</option>
+                        <option value="tfa_38" id="tfa_38" class="">Hawaii</option>
+                        <option value="tfa_39" id="tfa_39" class="">Idaho</option>
+                        <option value="tfa_40" id="tfa_40" class="">Illinois</option>
+                        <option value="tfa_41" id="tfa_41" class="">Indiana</option>
+                        <option value="tfa_42" id="tfa_42" class="">Iowa</option>
+                        <option value="tfa_43" id="tfa_43" class="">Kansas</option>
+                        <option value="tfa_44" id="tfa_44" class="">Kentucky</option>
+                        <option value="tfa_45" id="tfa_45" class="">Louisiana</option>
+                        <option value="tfa_46" id="tfa_46" class="">Maine</option>
+                        <option value="tfa_47" id="tfa_47" class="">Maryland</option>
+                        <option value="tfa_48" id="tfa_48" class="">Massachusetts</option>
+                        <option value="tfa_49" id="tfa_49" class="">Michigan</option>
+                        <option value="tfa_50" id="tfa_50" class="">Minnesota</option>
+                        <option value="tfa_51" id="tfa_51" class="">Mississippi</option>
+                        <option value="tfa_52" id="tfa_52" class="">Missouri</option>
+                        <option value="tfa_53" id="tfa_53" class="">Montana</option>
+                        <option value="tfa_54" id="tfa_54" class="">Nebraska</option>
+                        <option value="tfa_55" id="tfa_55" class="">Nevada</option>
+                        <option value="tfa_56" id="tfa_56" class="">New Hampshire</option>
+                        <option value="tfa_57" id="tfa_57" class="">New Jersey</option>
+                        <option value="tfa_58" id="tfa_58" class="">New Mexico</option>
+                        <option value="tfa_59" id="tfa_59" class="">New York</option>
+                        <option value="tfa_60" id="tfa_60" class="">North Carolina</option>
+                        <option value="tfa_61" id="tfa_61" class="">North Dakota</option>
+                        <option value="tfa_62" id="tfa_62" class="">Ohio</option>
+                        <option value="tfa_63" id="tfa_63" class="">Oklahoma</option>
+                        <option value="tfa_64" id="tfa_64" class="">Oregon</option>
+                        <option value="tfa_65" id="tfa_65" class="">Pennsylvania</option>
+                        <option value="tfa_66" id="tfa_66" class="">Rhode Island</option>
+                        <option value="tfa_67" id="tfa_67" class="">South Carolina</option>
+                        <option value="tfa_68" id="tfa_68" class="">South Dakota</option>
+                        <option value="tfa_69" id="tfa_69" class="">Tennessee</option>
+                        <option value="tfa_70" id="tfa_70" class="">Texas</option>
+                        <option value="tfa_71" id="tfa_71" class="">Utah</option>
+                        <option value="tfa_72" id="tfa_72" class="">Vermont</option>
+                        <option value="tfa_73" id="tfa_73" class="">Virginia</option>
+                        <option value="tfa_74" id="tfa_74" class="">Washington</option>
+                        <option value="tfa_75" id="tfa_75" class="">West Virginia</option>
+                        <option value="tfa_76" id="tfa_76" class="">Wisconsin</option>
+                        <option value="tfa_77" id="tfa_77" class="">Wyoming</option>
+                        <option value="tfa_78" id="tfa_78" class="">Puerto Rico</option>
+                        <option value="tfa_79" id="tfa_79" class="">Virgin Island</option>
+                        <option value="tfa_80" id="tfa_80" class="">Northern Mariana Islands</option>
+                        <option value="tfa_81" id="tfa_81" class="">Guam</option>
+                        <option value="tfa_82" id="tfa_82" class="">American Samoa</option>
+                        <option value="tfa_83" id="tfa_83" class="">Palau</option>
+                      </select></div>
+                  </div>
+                  <div class="oneField field-container-D    " id="tfa_84-D">
+                    <label id="tfa_84-L" class="label preField reqMark" for="tfa_84">Zip</label><br>
+                    <div class="inputWrapper"><input type="text" id="tfa_842" name="tfa_84" value="%%=v(@zip)=%%"
+                        title="Zip"></div>
+                  </div>
+                </div>
+              </div>
+              <div id="tfa_98" class="section group wf-acl-hidden">
+                <div class="oneField field-container-D    " id="tfa_96-D">
+                  <label id="tfa_96-L" class="label preField " for="tfa_96">Pre-Pop State</label><br>
+                  <div class="inputWrapper"><input type="text" id="tfa_96" name="tfa_96" value="%%=v(@state)=%%"
+                      title="Pre-Pop State" class=""></div>
+                </div>
+                <div class="oneField field-container-D    " id="tfa_88-D">
+                  <label id="tfa_88-L" class="label preField " for="tfa_88">Program of Interest</label><br>
+                  <div class="inputWrapper"><input type="text" id="tfa_88" name="tfa_88" value="%%=v(@programName)=%%"
+                      title="Program of Interest" class=""></div>
+                </div>
+                <div class="oneField field-container-D    " id="tfa_85-D">
+                  <label id="tfa_85-L" class="label preField " for="tfa_85">Intended Term Start</label><br>
+                  <div class="inputWrapper"><input type="text" id="tfa_85" name="tfa_85" value="%%=v(@term)=%%"
+                      title="Intended Term Start" class=""></div>
+                </div>
+              </div>
+              <div class="oneField field-container-D    " id="tfa_90-D">
+                <label id="tfa_90-L" class="label preField reqMark" for="tfa_90">High School Attended</label><br>
+                <div class="inputWrapper"><input aria-required="true" type="text" id="tfa_90" name="tfa_90"
+                    value="%%=v(@HighSchoolName)=%%" title="High School Attended" class="required"></div>
+              </div>
+              
+              <div id="tfa_123" class="section inline group">
+<div class="oneField field-container-D    " id="tfa_116-D">
+<label id="tfa_116-L" class="label preField reqMark" for="tfa_116">Have You Completed More Than 12 College Credits?</label><br><div class="inputWrapper"><select aria-required="true" id="tfa_116" name="tfa_116" title="Have You Completed More Than 12 College Credits?" class="Required"><option value="">Please select...</option>
+<option value="tfa_117" id="tfa_117" data-conditionals="#tfa_119" class="">Yes</option>
+<option value="tfa_118" id="tfa_118" class="">No</option></select></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_119-D">
+<label id="tfa_119-L" class="label preField " for="tfa_119">Name of College or University Previously Attended</label><br><div class="inputWrapper"><input type="text" id="tfa_119" name="tfa_119" value="" data-condition="`#tfa_117`" title="Name of College or University Previously Attended" class=""></div>
+</div>
+</div>
+              
+              <div class="oneField field-container-D    " id="tfa_100-D">
+                <label id="tfa_100-L" class="label preField reqMark" for="tfa_100">Event Date</label><br>
+                <div class="inputWrapper"><input aria-required="true" type="text" id="tfa_100" name="tfa_100" value=""
+                    title="Event Date" class="calc-eventDateStart required" placeholder="Please select a date"readonly></div>
+              </div>
+              <div class="oneField field-container-D    " id="tfa_107-D">
+                <label id="tfa_107-L" class="label preField reqMark" for="tfa_107">Available Times</label><br>
+                <div class="inputWrapper"><select aria-required="true" id="tfa_107" name="tfa_107"
+                    title="Available Times" class="calc-weekdayTimes required">
+                    <option value=""></option>
+
+                  </select></div>
+              </div>
+
+              <div class="oneField field-container-D    " id="tfa_89-D">
+                <label id="tfa_89-L" class="label preField reqMark" for="tfa_89">Number of Guests (excluding
+                  yourself)</label><br>
+                <div class="inputWrapper"><input aria-required="true" type="text" id="tfa_89" name="tfa_89" value=""
+                    title="Number of Guests (excluding yourself)" class="required"></div>
+              </div>
+              <div class="oneField field-container-D    " id="tfa_113-D">
+                <label id="tfa_113-L" class="label preField " for="tfa_113">Parent/Supporter Name (Optional)</label><br>
+                <div class="inputWrapper"><input type="text" id="tfa_113" name="tfa_113" value=""
+                    title="Parent/Supporter Name (Optional)" class=""></div>
+              </div>
+              <div class="oneField field-container-D    " id="tfa_115-D">
+                <label id="tfa_115-L" class="label preField " for="tfa_115">Parent/Supporter Email
+                  (Optional)</label><br>
+                <div class="inputWrapper"><input type="text" id="tfa_115" name="tfa_115" value=""
+                    title="Parent/Supporter Email (Optional)" class=""></div>
+              </div>
+              <div class="htmlSection" id="tfa_95">
+                <div class="htmlContent" id="tfa_95-HTML">By clicking "Register," I agree to receive emails, phone
+                    calls, and SMS/Text Messages from Southern New Hampshire University (SNHU) at the numbers I provided
+                    (land and/or wireless), including calls or texts made using automated technology or prerecorded
+                    voice messages. This consent is not required to purchase services. You may also call SNHU at
+                    800.668.1249. Terms and Conditions apply.</div>
+              </div>
+              <div class="actions" id="5054797-A" data-contentid="submit_button"><input type="submit"
+                  data-label="Register" class="primaryAction" id="submit_button" value="Register"></div>
+              <div style="clear:both"></div>
+              <input type="hidden" value="5054797" name="tfa_dbFormId" id="tfa_dbFormId"><input type="hidden" value=""
+                name="tfa_dbResponseId" id="tfa_dbResponseId"><input type="hidden"
+                value="abd6ef6eabdfb8b249d3d34d8a06d680" name="tfa_dbControl" id="tfa_dbControl"><input type="hidden"
+                value="" name="tfa_dbWorkflowSessionUuid" id="tfa_dbWorkflowSessionUuid"><input type="hidden" value="3"
+                name="tfa_dbVersionId" id="tfa_dbVersionId"><input type="hidden" value="" name="tfa_switchedoff"
+                id="tfa_switchedoff">
+            </form>
+          </div>
+        </div>
+        <div class="wFormFooter"></div>
+
+      </div>
+      <script>conditionalFields(URLsfid2)
+      </script>
+  <script
+    id="open-telemetry-script"
+    type="text/javascript"
+    src="https://snhu.tfaforms.net/dist/open-telemetry/open-telemetry.3e6c1bedaa7fb4452dd0.js"
+    data-customer-id="30021"
+    data-exporter-url="https://us-east-1-otel.formassembly.com/v1/traces"
+    data-exporter-console="0"
+></script>
+<script src="https://snhu.tfaforms.net/api_v2/sst/copy-and-paste"></script>
+
+
+      <script runat="server">
+        Platform.Load("core", "1");
+        var type = "house";
+        var eventTypeDE = Request.GetFormField("EventTypeDE");
+        var OrdersDE = DataExtension.Init("DE-UC-Open-House-Calendar-Dates");
+        var rows = OrdersDE.Rows.Lookup(["Event_Type"], [type]);
+        var result2 = '';
+
+        if (rows.length >= 1) {
+          for (var i = 0; i < rows.length; i++) {
+            var orderItem = rows[i]["StartDate"];
+            result2 += "'" + orderItem + "', ";
+          }
+        } else {
+          result2 = "No items to display";
+        }
+
+      </script>
+      <script>
+        $(function () {
+          // Specify the selectable dates as a string
+          var selectableDatesStr = ("<ctrl:var name=result2/>");
+
+          // Get the first date from the string
+          var firstDateStr = selectableDatesStr.split(',')[0];
+
+          // Parse the first date string to a JavaScript Date object
+          var firstAvailableDate = new Date(firstDateStr);
+
+          // Function to check if the given date is a weekend
+          function isWeekend(date) {
+            var day = date.getDay();
+            return day === 0 || day === 6;
+          }
+
+          $("#tfa_100").datepicker({
+            beforeShowDay: function (date) {
+              // Format the current date to match the selectable dates format
+              var formattedDate = $.datepicker.formatDate('yy-mm-dd', date);
+
+              // Check if the current date is in the selectable dates array
+              if (selectableDatesStr.indexOf(formattedDate) != -1) {
+                // Return an array with the CSS class and tooltip for selectable dates
+                return [true, 'selectable', 'Selectable date'];
+              } else {
+                // Return an array with the CSS class and tooltip for non-selectable dates
+                return [false, 'non-selectable', 'Non-selectable date'];
+              }
+            },
+            defaultDate: firstAvailableDate
+          });
+
+          // Change the available times based on weekday/weekend
+          $("#tfa_100").on("change", function () {
+            var selectedDate = $("#tfa_100").datepicker("getDate");
+            var isWeekendSelected = isWeekend(selectedDate);
+
+            // Clear previous options
+            $("#tfa_107").empty();
+
+            if (isWeekendSelected) {
+              $("#tfa_107").append('<option value="tfa_108" id="tfa_108" class="">9am</option>');
+            } else {
+  $("#tfa_107").append('<option value="tfa_108" id="tfa_108" class="">9am</option>');
+            }
+          });
+        });
+      </script>
+
+    </div>
+
+  <!--  <div id="Transfer" class="tabcontent hidden">
+      <script>
+        /*Function to display conditional form fields - also applies "required" status to the non-prefill fields when no SFID is available*/
+        var queryURL3 = window.location.search;
+        var urlParam3 = new URLSearchParams(queryURL3);
+        var URLsfid3 = urlParam3.get('sfid')
+
+        function conditionalFields(URLsfid3) {
+          if (URLsfid3 == null) {
+
+            document.querySelector("#tfa_263").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_263").setAttribute("class", "required");
+            document.querySelector("#tfa_233").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_233").setAttribute("class", "required");
+            document.querySelector("#tfa_243").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_243").setAttribute("class", "required");
+            document.querySelector("#tfa_253").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_253").setAttribute("class", "required");
+            document.querySelector("#tfa_843").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_843").setAttribute("class", "required");
+          } else if (URLsfid3 == '') {
+
+            document.querySelector("#tfa_263").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_263").setAttribute("class", "required");
+            document.querySelector("#tfa_233").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_233").setAttribute("class", "required");
+            document.querySelector("#tfa_243").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_243").setAttribute("class", "required");
+            document.querySelector("#tfa_253").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_253").setAttribute("class", "required");
+            document.querySelector("#tfa_843").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_843").setAttribute("class", "required");
+          } else {
+
+            document.querySelector("#PrePopFields3").classList.add("HidePrePopFields");
+
+          }
+
+        }
+
+        /*END conditional form field Function*/
+      </script>
+    
+      <div class="wFormContainer">
+        <div class="wFormHeader"></div>
+        <style type="text/css"></style>
+        <div class="">
+          <div class="wForm" id="5054799-WRPR" dir="ltr">
+            <div class="codesection" id="code-5054799"></div>
+            <h3 class="wFormTitle" data-testid="form-title" id="5054799-T">Book your Transfer Tuesday</h3>
+            <form method="post" action="https://snhu.tfaforms.net/api_v2/workflow/processor"
+              class="hintsBelow labelsAbove" id="5054799" role="form">
+              <div id="tfa_20" class="section group wf-acl-hidden">
+                <div class="oneField field-container-D    " id="tfa_93-D">
+                  <label id="tfa_93-L" class="label preField " for="tfa_93">NULL field</label><br>
+                  <div class="inputWrapper"><input type="text" id="tfa_93" name="tfa_93" value="" title="NULL field"
+                      class=""></div>
+                </div>
+                <div class="oneField field-container-D    " id="tfa_4-D">
+                  <label id="tfa_4-L" class="label preField " for="tfa_4">Event Settings</label><br>
+                  <div class="inputWrapper"><input type="text" id="tfa_4" name="tfa_4" value="Transfer Tuesdays"
+                      default="Transfer Tuesdays" title="Event Settings" class=""></div>
+                </div>
+                <div class="oneField field-container-D    " id="tfa_19-D">
+                  <label id="tfa_19-L" class="label preField " for="tfa_19">Contact SFID</label><br>
+                  <div class="inputWrapper"><input type="text" id="tfa_19" name="tfa_19" value="%%=v(@par)=%%"
+                      title="Contact SFID" class="calc-contactSFID"></div>
+                </div>
+                <div class="oneField field-container-D    " id="tfa_94-D">
+                  <label id="tfa_94-L" class="label preField " for="tfa_94">Program SFID</label><br>
+                  <div class="inputWrapper"><input type="text" id="tfa_94" name="tfa_94" value="" title="Program SFID"
+                      class=""></div>
+                </div>
+              </div>
+               <p style="margin-left:5px; font-size:18px; font-weight:600;">
+    Student information:
+  </p>
+              <div class="oneField field-container-D    " style="float:left;"id="tfa_1-D">
+                <label id="tfa_1-L" class="label preField reqMark" for="tfa_1">First Name</label><br>
+                <div class="inputWrapper"><input aria-required="true" type="text" id="tfa_1" name="tfa_1"
+                    value="%%=v(@firstname)=%%" title="First Name" class="required"></div>
+              </div>
+              <div class="oneField field-container-D    " style="float:left;"id="tfa_137-D">
+<label id="tfa_137-L" class="label preField " for="tfa_137"><span style="font-size: 15.2px;">Preferred First Name</span></label><br><div class="inputWrapper"><input type="text" id="tfa_137" name="tfa_137" value="" title="Preferred First Name" class=""></div>
+</div>
+              <div class="oneField field-container-D    " style="float:left;"id="tfa_2-D">
+                <label id="tfa_2-L" class="label preField reqMark" for="tfa_2">Last Name</label><br>
+                <div class="inputWrapper"><input aria-required="true" type="text" id="tfa_2" name="tfa_2"
+                    value="%%=v(@lastname)=%%" title="Last Name" class="required"></div>
+              </div>
+              <div class="oneField field-container-D    " style="float:left;"id="tfa_3-D">
+                <label id="tfa_3-L" class="label preField reqMark" for="tfa_3">Email</label><br>
+                <div class="inputWrapper"><input aria-required="true" type="text" id="tfa_3" name="tfa_3"
+                    value="%%=v(@email)=%%" title="Email" class="required"></div>
+              </div>
+              <div Id="PrePopFields3">
+                <div id="tfa_92" class="section group">
+                  <div class="oneField field-container-D    " style="float:left;"id="tfa_23-D">
+                    <label id="tfa_23-L" class="label preField reqMark" for="tfa_23">Phone</label><br>
+                    <div class="inputWrapper"><input type="text" id="tfa_233" name="tfa_23" value="%%=v(@phone)=%%"
+                        title="Phone"></div>
+                  </div>
+                  <div class="oneField field-container-D    " style="float:left;"id="tfa_24-D">
+                    <label id="tfa_24-L" class="label preField reqMark" for="tfa_24">Mailing Address</label><br>
+                    <div class="inputWrapper"><input type="text" id="tfa_243" name="tfa_24"
+                        value="%%=v(@mailaddress)=%%" title="Mailing Address"></div>
+                  </div>
+                  <div class="oneField field-container-D    " style="float:left;"id="tfa_25-D">
+                    <label id="tfa_25-L" class="label preField reqMark" for="tfa_25">City</label><br>
+                    <div class="inputWrapper"><input type="text" id="tfa_253" name="tfa_25" value="%%=v(@city)=%%"
+                        title="City"></div>
+                  </div>
+                  <div class="oneField field-container-D    " style="float:left;"id="tfa_26-D">
+                    <label id="tfa_26-L" class="label preField reqMark" for="tfa_26">State</label><br>
+                    <div class="inputWrapper"><select id="tfa_263" name="tfa_26" title="State">
+                        <option value="">Please select...</option>
+                        <option value="tfa_27" id="tfa_27" class="">Alabama</option>
+                        <option value="tfa_28" id="tfa_28" class="">Alaska</option>
+                        <option value="tfa_29" id="tfa_29" class="">Arizona</option>
+                        <option value="tfa_30" id="tfa_30" class="">Arkansas</option>
+                        <option value="tfa_31" id="tfa_31" class="">California</option>
+                        <option value="tfa_32" id="tfa_32" class="">Colorado</option>
+                        <option value="tfa_33" id="tfa_33" class="">Connecticut</option>
+                        <option value="tfa_34" id="tfa_34" class="">Delaware</option>
+                        <option value="tfa_35" id="tfa_35" class="">District Of Columbia</option>
+                        <option value="tfa_36" id="tfa_36" class="">Florida</option>
+                        <option value="tfa_37" id="tfa_37" class="">Georgia</option>
+                        <option value="tfa_38" id="tfa_38" class="">Hawaii</option>
+                        <option value="tfa_39" id="tfa_39" class="">Idaho</option>
+                        <option value="tfa_40" id="tfa_40" class="">Illinois</option>
+                        <option value="tfa_41" id="tfa_41" class="">Indiana</option>
+                        <option value="tfa_42" id="tfa_42" class="">Iowa</option>
+                        <option value="tfa_43" id="tfa_43" class="">Kansas</option>
+                        <option value="tfa_44" id="tfa_44" class="">Kentucky</option>
+                        <option value="tfa_45" id="tfa_45" class="">Louisiana</option>
+                        <option value="tfa_46" id="tfa_46" class="">Maine</option>
+                        <option value="tfa_47" id="tfa_47" class="">Maryland</option>
+                        <option value="tfa_48" id="tfa_48" class="">Massachusetts</option>
+                        <option value="tfa_49" id="tfa_49" class="">Michigan</option>
+                        <option value="tfa_50" id="tfa_50" class="">Minnesota</option>
+                        <option value="tfa_51" id="tfa_51" class="">Mississippi</option>
+                        <option value="tfa_52" id="tfa_52" class="">Missouri</option>
+                        <option value="tfa_53" id="tfa_53" class="">Montana</option>
+                        <option value="tfa_54" id="tfa_54" class="">Nebraska</option>
+                        <option value="tfa_55" id="tfa_55" class="">Nevada</option>
+                        <option value="tfa_56" id="tfa_56" class="">New Hampshire</option>
+                        <option value="tfa_57" id="tfa_57" class="">New Jersey</option>
+                        <option value="tfa_58" id="tfa_58" class="">New Mexico</option>
+                        <option value="tfa_59" id="tfa_59" class="">New York</option>
+                        <option value="tfa_60" id="tfa_60" class="">North Carolina</option>
+                        <option value="tfa_61" id="tfa_61" class="">North Dakota</option>
+                        <option value="tfa_62" id="tfa_62" class="">Ohio</option>
+                        <option value="tfa_63" id="tfa_63" class="">Oklahoma</option>
+                        <option value="tfa_64" id="tfa_64" class="">Oregon</option>
+                        <option value="tfa_65" id="tfa_65" class="">Pennsylvania</option>
+                        <option value="tfa_66" id="tfa_66" class="">Rhode Island</option>
+                        <option value="tfa_67" id="tfa_67" class="">South Carolina</option>
+                        <option value="tfa_68" id="tfa_68" class="">South Dakota</option>
+                        <option value="tfa_69" id="tfa_69" class="">Tennessee</option>
+                        <option value="tfa_70" id="tfa_70" class="">Texas</option>
+                        <option value="tfa_71" id="tfa_71" class="">Utah</option>
+                        <option value="tfa_72" id="tfa_72" class="">Vermont</option>
+                        <option value="tfa_73" id="tfa_73" class="">Virginia</option>
+                        <option value="tfa_74" id="tfa_74" class="">Washington</option>
+                        <option value="tfa_75" id="tfa_75" class="">West Virginia</option>
+                        <option value="tfa_76" id="tfa_76" class="">Wisconsin</option>
+                        <option value="tfa_77" id="tfa_77" class="">Wyoming</option>
+                        <option value="tfa_78" id="tfa_78" class="">Puerto Rico</option>
+                        <option value="tfa_79" id="tfa_79" class="">Virgin Island</option>
+                        <option value="tfa_80" id="tfa_80" class="">Northern Mariana Islands</option>
+                        <option value="tfa_81" id="tfa_81" class="">Guam</option>
+                        <option value="tfa_82" id="tfa_82" class="">American Samoa</option>
+                        <option value="tfa_83" id="tfa_83" class="">Palau</option>
+                      </select></div>
+                  </div>
+                  <div class="oneField field-container-D    " style="float:left;"id="tfa_84-D">
+                    <label id="tfa_84-L" class="label preField reqMark" for="tfa_84">Zip</label><br>
+                    <div class="inputWrapper"><input type="text" id="tfa_843" name="tfa_84" value="%%=v(@zip)=%%"
+                        title="Zip"></div>
+                  </div>
+                </div>
+              </div>
+              <div id="tfa_98" class="section group wf-acl-hidden">
+                <div class="oneField field-container-D    "style="float:left;" id="tfa_96-D">
+                  <label id="tfa_96-L" class="label preField " for="tfa_96">Pre-Pop State</label><br>
+                  <div class="inputWrapper"><input type="text" id="tfa_96" name="tfa_96" value="%%=v(@state)=%%"
+                      title="Pre-Pop State" class=""></div>
+                </div>
+                <div class="oneField field-container-D    "style="float:left;" id="tfa_88-D">
+                  <label id="tfa_88-L" class="label preField " for="tfa_88">Program of Interest</label><br>
+                  <div class="inputWrapper"><input type="text" id="tfa_88" name="tfa_88" value="%%=v(@programName)=%%"
+                      title="Program of Interest" class=""></div>
+                </div>
+                <div class="oneField field-container-D    " style="float:left;"id="tfa_85-D">
+                  <label id="tfa_85-L" class="label preField " for="tfa_85">Intended Term Start</label><br>
+                  <div class="inputWrapper"><input type="text" id="tfa_85" name="tfa_85" value="%%=v(@term)=%%"
+                      title="Intended Term Start" class=""></div>
+                </div>
+              </div>
+              <div class="oneField field-container-D    " style="float:left;"id="tfa_90-D">
+                <label id="tfa_90-L" class="label preField reqMark" for="tfa_90">High School Attended</label><br>
+                <div class="inputWrapper"><input aria-required="true" type="text" id="tfa_90" name="tfa_90"
+                    value="%%=v(@HighSchoolName)=%%" title="High School Attended" class="required"></div>
+              </div>
+              
+                
+              <p style="margin-left:5px; font-size:18px; font-weight:600;">
+    Event details:
+  </p>
+              <div class="oneField field-container-D    " style="float:left;"id="tfa_114-D">
+                <label id="tfa_114-L" class="label preField reqMark" for="tfa_114">Event Date</label><br>
+                <div class="inputWrapper"><input aria-required="true" type="text" id="tfa_114" name="tfa_114" value=""
+                    title="Event Date" class="calc-eventDateStart required" placeholder="Please select a date" readonly></div>
+              </div>
+              <div class="oneField field-container-D    " style="float:left;"id="tfa_121-D">
+                <label id="tfa_121-L" class="label preField reqMark" for="tfa_121">Available Times</label><br>
+                <div class="inputWrapper"><select aria-required="true" id="tfa_121" name="tfa_121"
+                    title="Available Times" class="calc-weekdayTimes required">
+                    <option value=""></option>
+                  </select></div>
+              </div>
+              <div class="oneField field-container-D    " style="float:left;"id="tfa_89-D">
+                <label id="tfa_89-L" class="label preField reqMark" for="tfa_89">Number of Guests (excluding
+                  yourself)</label><br>
+                <div class="inputWrapper"><input aria-required="true" type="text" id="tfa_89" name="tfa_89" value=""
+                    title="Number of Guests (excluding yourself)" class="required"></div>
+              </div>
+              <div class="oneField field-container-D    " style="float:left;"id="tfa_127-D">
+                <label id="tfa_127-L" class="label preField " for="tfa_127">Parent/Supporter Name (Optional)</label><br>
+                <div class="inputWrapper"><input type="text" id="tfa_127" name="tfa_127" value=""
+                    title="Parent/Supporter Name (Optional)" class=""></div>
+              </div>
+              <div class="oneField field-container-D    " style="float:left;"id="tfa_129-D">
+                <label id="tfa_129-L" class="label preField " for="tfa_129">Parent/Supporter Email
+                  (Optional)</label><br>
+                <div class="inputWrapper"><input type="text" id="tfa_129" name="tfa_129" value=""
+                    title="Parent/Supporter Email (Optional)" class=""></div>
+              </div>
+             
+              <div id="tfa_135" class="section inline group">
+<div class="oneField field-container-D    " id="tfa_131-D">
+   <p style="margin-bottom:10px; font-size:16px; font-weight:600;" >
+    Transfer information:
+  </p>
+<label id="tfa_131-L" class="label preField reqMark" for="tfa_131">Have You Completed More than 12 College Credits?</label><br><div class="inputWrapper"><select aria-required="true" id="tfa_131" name="tfa_131" title="Have You Completed More than 12 College Credits?" class="required"><option value="">Please select...</option>
+<option value="tfa_132" id="tfa_132" data-conditionals="#tfa_134" class="">Yes</option>
+<option value="tfa_133" id="tfa_133" class="">No</option></select></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_134-D">
+<label id="tfa_134-L" class="label preField reqMark" for="tfa_134">Name of College or University Attended</label><br><div class="inputWrapper"><input aria-required="true" type="text" id="tfa_134" name="tfa_134" value="" data-condition="`#tfa_132`" title="Name of College or University Attended" class="required"></div>
+</div>
+</div>
+              
+              
+              <div class="htmlSection" id="tfa_95">
+                <div class="htmlContent" id="tfa_95-HTML">By clicking "Register," I agree to receive emails, phone
+                    calls, and SMS/Text Messages from Southern New Hampshire University (SNHU) at the numbers I provided
+                    (land and/or wireless), including calls or texts made using automated technology or prerecorded
+                    voice messages. This consent is not required to purchase services. You may also call SNHU at
+                    800.668.1249. Terms and Conditions apply.</div>
+              </div>
+              <div class="actions" id="5054799-A" data-contentid="submit_button"><input type="submit"
+                  data-label="Register" class="primaryAction" id="submit_button" value="Register"></div>
+              <div style="clear:both"></div>
+              <input type="hidden" value="5054799" name="tfa_dbFormId" id="tfa_dbFormId"><input type="hidden" value=""
+                name="tfa_dbResponseId" id="tfa_dbResponseId"><input type="hidden"
+                value="a9ae41af3fdc6c2e8ae6e5df30bf5cb3" name="tfa_dbControl" id="tfa_dbControl"><input type="hidden"
+                value="" name="tfa_dbWorkflowSessionUuid" id="tfa_dbWorkflowSessionUuid"><input type="hidden" value="2"
+                name="tfa_dbVersionId" id="tfa_dbVersionId"><input type="hidden" value="" name="tfa_switchedoff"
+                id="tfa_switchedoff">
+            </form>
+          </div>
+        </div>
+        <div class="wFormFooter"></div>
+      </div>
+      <script>conditionalFields(URLsfid3)
+      </script>
+ <script
+    id="open-telemetry-script"
+    type="text/javascript"
+    src="https://snhu.tfaforms.net/dist/open-telemetry/open-telemetry.3e6c1bedaa7fb4452dd0.js"
+    data-customer-id="30021"
+    data-exporter-url="https://us-east-1-otel.formassembly.com/v1/traces"
+    data-exporter-console="0"
+></script>
+<script src="https://snhu.tfaforms.net/api_v2/sst/copy-and-paste"></script>
+
+
+
+      <script runat="server">
+        Platform.Load("core", "1");
+        var type = "Transfer";
+        var eventTypeDE = Request.GetFormField("EventTypeDE");
+        var OrdersDE = DataExtension.Init("DE-UC-Transfer-Calendar-Dates");
+        var rows = OrdersDE.Rows.Lookup(["Event_Type"], [type]);
+        var result3 = '';
+
+        if (rows.length >= 1) {
+          for (var i = 0; i < rows.length; i++) {
+            var orderItem = rows[i]["StartDate"];
+            result3 += "'" + orderItem + "', ";
+          }
+        } else {
+          result3 = "No items to display";
+        }
+
+      </script>
+      <script>
+        $(function () {
+          // Specify the selectable dates as a string
+          var selectableDatesStr = ("<ctrl:var name=result3/>");
+
+          // Get the first date from the string
+          var firstDateStr = selectableDatesStr.split(',')[0];
+
+          // Parse the first date string to a JavaScript Date object
+          var firstAvailableDate = new Date(firstDateStr);
+
+          // Function to check if the given date is a weekend
+          function isWeekend(date) {
+            var day = date.getDay();
+            return day === 0 || day === 6;
+          }
+
+          $("#tfa_114").datepicker({
+            beforeShowDay: function (date) {
+              // Format the current date to match the selectable dates format
+              var formattedDate = $.datepicker.formatDate('yy-mm-dd', date);
+
+              // Check if the current date is in the selectable dates array
+              if (selectableDatesStr.indexOf(formattedDate) != -1) {
+                // Return an array with the CSS class and tooltip for selectable dates
+                return [true, 'selectable', 'Selectable date'];
+              } else {
+                // Return an array with the CSS class and tooltip for non-selectable dates
+                return [false, 'non-selectable', 'Non-selectable date'];
+              }
+            },
+            defaultDate: firstAvailableDate
+          });
+
+          // Change the available times based on weekday/weekend
+          $("#tfa_114").on("change", function () {
+            var selectedDate = $("#tfa_114").datepicker("getDate");
+            var isWeekendSelected = isWeekend(selectedDate);
+
+            // Clear previous options
+            $("#tfa_121").empty();
+
+            if (isWeekendSelected) {
+              $("#tfa_121").append('<option value="tfa_122" id="tfa_122" class="">9am</option>');
+              $("#tfa_121").append('<option value="tfa_123" id="tfa_123" class="">10am</option>');
+              $("#tfa_121").append('<option value="tfa_124" id="tfa_124" class="">11am</option>');
+              $("#tfa_121").append('<option value="tfa_125" id="tfa_125" class="">12pm</option>');
+              $("#tfa_121").append('<option value="tfa_126" id="tfa_126" class="">1pm</option>');
+              $("#tfa_121").append('<option value="tfa_130" id="tfa_130" class="">2pm</option>');
+            } else {
+              $("#tfa_121").append('<option value="tfa_122" id="tfa_122" class="">9am</option>');
+              $("#tfa_121").append('<option value="tfa_123" id="tfa_123" class="">10am</option>');
+              $("#tfa_121").append('<option value="tfa_124" id="tfa_124" class="">11am</option>');
+              $("#tfa_121").append('<option value="tfa_125" id="tfa_125" class="">12pm</option>');
+              $("#tfa_121").append('<option value="tfa_126" id="tfa_126" class="">1pm</option>');
+              $("#tfa_121").append('<option value="tfa_130" id="tfa_130" class="">2pm</option>');
+            }
+          });
+        });
+      </script>
+
+    </div>
+
+    
+
+      <script>conditionalFields(URLsfid4)
+      </script>
+      <script id="open-telemetry-script" type="text/javascript"
+        src="https://snhu.tfaforms.net/dist/open-telemetry/open-telemetry.1209a717b5bda774547d.js"
+        data-customer-id="30021" data-exporter-url="https://us-east-1-otel.formassembly.com/v1/traces"
+        data-exporter-console="0"></script>
+      <script src="https://snhu.tfaforms.net/api_v2/sst/copy-and-paste"></script>
+
+
+      <script runat="server">
+        Platform.Load("core", "1");
+        var type = "Showcase";
+        var eventTypeDE = Request.GetFormField("EventTypeDE");
+        var OrdersDE = DataExtension.Init("DE-UC-Showcase-Calendar-Dates");
+        var rows = OrdersDE.Rows.Lookup(["Event_Type"], [type]);
+        var result4 = '';
+
+        if (rows.length >= 1) {
+          for (var i = 0; i < rows.length; i++) {
+            var orderItem = rows[i]["StartDate"];
+            result4 += "'" + orderItem + "', ";
+          }
+        } else {
+          result4 = "No items to display";
+        }
+
+      </script>
+      <script>
+        $(function () {
+          // Specify the selectable dates as a string
+          var selectableDatesStr = ("<ctrl:var name=result4/>");
+
+          // Get the first date from the string
+          var firstDateStr = selectableDatesStr.split(',')[0];
+
+          // Parse the first date string to a JavaScript Date object
+          var firstAvailableDate = new Date(firstDateStr);
+
+          // Function to check if the given date is a weekend
+          function isWeekend(date) {
+            var day = date.getDay();
+            return day === 0 || day === 6;
+          }
+
+          $("#tfa_143").datepicker({
+            beforeShowDay: function (date) {
+              // Format the current date to match the selectable dates format
+              var formattedDate = $.datepicker.formatDate('yy-mm-dd', date);
+
+              // Check if the current date is in the selectable dates array
+              if (selectableDatesStr.indexOf(formattedDate) != -1) {
+                // Return an array with the CSS class and tooltip for selectable dates
+                return [true, 'selectable', 'Selectable date'];
+              } else {
+                // Return an array with the CSS class and tooltip for non-selectable dates
+                return [false, 'non-selectable', 'Non-selectable date'];
+              }
+            },
+            defaultDate: firstAvailableDate
+          });
+
+          // Change the available times based on weekday/weekend
+          $("#tfa_143").on("change", function () {
+            var selectedDate = $("#tfa_143").datepicker("getDate");
+            var isWeekendSelected = isWeekend(selectedDate);
+
+            // Clear previous options
+            $("#tfa_136").empty();
+
+            if (isWeekendSelected) {
+              $("#tfa_136").append('<option value="tfa_137" id="tfa_137" class="">9am</option>');
+
+            } else {
+              $("#tfa_136").append('<option value="tfa_137" id="tfa_137" class="">9am</option>');
+
+            }
+          });
+        });
+      </script>
+
+    </div> -->
+    <div id="Accepted" class="tabcontent hidden">
+      <script>
+        /*Function to display conditional form fields - also applies "required" status to the non-prefill fields when no SFID is available*/
+        var queryURL5 = window.location.search;
+        var urlParam5 = new URLSearchParams(queryURL5);
+        var URLsfid5 = urlParam5.get('sfid')
+
+        function conditionalFields(URLsfid5) {
+          if (URLsfid5 == null) {
+
+            document.querySelector("#tfa_265").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_265").setAttribute("class", "required");
+            document.querySelector("#tfa_235").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_235").setAttribute("class", "required");
+            document.querySelector("#tfa_245").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_245").setAttribute("class", "required");
+            document.querySelector("#tfa_255").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_255").setAttribute("class", "required");
+            document.querySelector("#tfa_845").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_845").setAttribute("class", "required");
+          } else if (URLsfid5 == '') {
+
+            document.querySelector("#tfa_265").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_265").setAttribute("class", "required");
+            document.querySelector("#tfa_235").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_235").setAttribute("class", "required");
+            document.querySelector("#tfa_245").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_245").setAttribute("class", "required");
+            document.querySelector("#tfa_255").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_255").setAttribute("class", "required");
+            document.querySelector("#tfa_845").setAttribute("aria-required", "true");
+            document.querySelector("#tfa_845").setAttribute("class", "required");
+          } else {
+
+            document.querySelector("#PrePopFields5").classList.add("HidePrePopFields");
+
+          }
+
+        }
+
+        /*END conditional form field Function*/
+      </script>
+
+      <!-- FORM: BODY SECTION -->
+      <div class="wFormContainer">
+        <div class="wFormHeader"></div>
+        <style type="text/css"></style>
+      <div class=""><div class="wForm" id="5054826-WRPR" dir="ltr">
+<div class="codesection" id="code-5054826"></div>
+<h3 class="wFormTitle" data-testid="form-title" id="5054826-T">Accepted Student Days</h3>
+<form method="post" action="https://snhu.tfaforms.net/api_v2/workflow/processor" class="hintsBelow labelsAbove" id="5054826" role="form">
+<div id="tfa_20" class="section group wf-acl-hidden">
+<div class="oneField field-container-D    " id="tfa_93-D">
+<label id="tfa_93-L" class="label preField " for="tfa_93">NULL field</label><br><div class="inputWrapper"><input type="text" id="tfa_93" name="tfa_93" value="" title="NULL field" class=""></div>
+</div>
+                <div class="oneField field-container-D    " id="tfa_4-D">
+                  <label id="tfa_4-L" class="label preField " for="tfa_4">Event Settings</label><br>
+                  <div class="inputWrapper"><input type="text" id="tfa_4" name="tfa_4" value="Accepted Student Days"
+                      default="Accepted Student Days" title="Event Settings" class=""></div>
+                </div>
+                <div class="oneField field-container-D    " id="tfa_19-D">
+                  <label id="tfa_19-L" class="label preField " for="tfa_19">Contact SFID</label><br>
+                  <div class="inputWrapper"><input type="text" id="tfa_19" name="tfa_19" value="%%=v(@par)=%%"
+                      title="Contact SFID" class="calc-contactSFID"></div>
+                </div>
+                <div class="oneField field-container-D    " id="tfa_94-D">
+                  <label id="tfa_94-L" class="label preField " for="tfa_94">Program SFID</label><br>
+                  <div class="inputWrapper"><input type="text" id="tfa_94" name="tfa_94" value="" title="Program SFID"
+                      class=""></div>
+                </div>
+              </div>
+    <p style="margin-left:5px; font-size:18px; font-weight:600;">
+    Student information:
+  </p>
+              <div class="oneField field-container-D    " style="float:left;"id="tfa_1-D">
+                <label id="tfa_1-L" class="label preField reqMark" for="tfa_1">First Name</label><br>
+                <div class="inputWrapper"><input aria-required="true" type="text" id="tfa_1" name="tfa_1"
+                    value="%%=v(@firstname)=%%" title="First Name" class="required"></div>
+              </div>
+  <div class="oneField field-container-D    " style="float:left;"id="tfa_168-D">
+<label id="tfa_168-L" class="label preField " for="tfa_168">Preferred First Name</label><br><div class="inputWrapper"><input type="text" id="tfa_168" name="tfa_168" value="" title="Preferred First Name" class=""></div>
+</div>
+              <div class="oneField field-container-D    " style="float:left;"id="tfa_2-D">
+                <label id="tfa_2-L" class="label preField reqMark" for="tfa_2">Last Name</label><br>
+                <div class="inputWrapper"><input aria-required="true" type="text" id="tfa_2" name="tfa_2"
+                    value="%%=v(@lastname)=%%" title="Last Name" class="required"></div>
+              </div>
+              <div class="oneField field-container-D    " style="float:left;"id="tfa_3-D">
+                <label id="tfa_3-L" class="label preField reqMark" for="tfa_3">Email</label><br>
+                <div class="inputWrapper"><input aria-required="true" type="text" id="tfa_3" name="tfa_3"
+                    value="%%=v(@email)=%%" title="Email" class="required"></div>
+              </div>
+              <div Id="PrePopFields5">
+                <div id="tfa_92" class="section group">
+                  <div class="oneField field-container-D    " style="float:left;"id="tfa_23-D">
+                    <label id="tfa_23-L" class="label preField reqMark" for="tfa_23">Phone</label><br>
+                    <div class="inputWrapper"><input type="text" id="tfa_235" name="tfa_23" value="%%=v(@phone)=%%"
+                        title="Phone"></div>
+                  </div>
+                  <div class="oneField field-container-D    " style="float:left;"id="tfa_24-D">
+                    <label id="tfa_24-L" class="label preField reqMark" for="tfa_24">Mailing Address</label><br>
+                    <div class="inputWrapper"><input type="text" id="tfa_245" name="tfa_24"
+                        value="%%=v(@mailaddress)=%%" title="Mailing Address"></div>
+                  </div>
+                  <div class="oneField field-container-D    " style="float:left;"id="tfa_25-D">
+                    <label id="tfa_25-L" class="label preField reqMark" for="tfa_25">City</label><br>
+                    <div class="inputWrapper"><input type="text" id="tfa_255" name="tfa_25" value="%%=v(@city)=%%"
+                        title="City"></div>
+                  </div>
+                  <div class="oneField field-container-D    " style="float:left;"id="tfa_26-D">
+                    <label id="tfa_26-L" class="label preField reqMark" for="tfa_26">State</label><br>
+                    <div class="inputWrapper"><select id="tfa_265" name="tfa_26" title="State">
+                        <option value="">Please select...</option>
+                        <option value="tfa_27" id="tfa_27" class="">Alabama</option>
+                        <option value="tfa_28" id="tfa_28" class="">Alaska</option>
+                        <option value="tfa_29" id="tfa_29" class="">Arizona</option>
+                        <option value="tfa_30" id="tfa_30" class="">Arkansas</option>
+                        <option value="tfa_31" id="tfa_31" class="">California</option>
+                        <option value="tfa_32" id="tfa_32" class="">Colorado</option>
+                        <option value="tfa_33" id="tfa_33" class="">Connecticut</option>
+                        <option value="tfa_34" id="tfa_34" class="">Delaware</option>
+                        <option value="tfa_35" id="tfa_35" class="">District Of Columbia</option>
+                        <option value="tfa_36" id="tfa_36" class="">Florida</option>
+                        <option value="tfa_37" id="tfa_37" class="">Georgia</option>
+                        <option value="tfa_38" id="tfa_38" class="">Hawaii</option>
+                        <option value="tfa_39" id="tfa_39" class="">Idaho</option>
+                        <option value="tfa_40" id="tfa_40" class="">Illinois</option>
+                        <option value="tfa_41" id="tfa_41" class="">Indiana</option>
+                        <option value="tfa_42" id="tfa_42" class="">Iowa</option>
+                        <option value="tfa_43" id="tfa_43" class="">Kansas</option>
+                        <option value="tfa_44" id="tfa_44" class="">Kentucky</option>
+                        <option value="tfa_45" id="tfa_45" class="">Louisiana</option>
+                        <option value="tfa_46" id="tfa_46" class="">Maine</option>
+                        <option value="tfa_47" id="tfa_47" class="">Maryland</option>
+                        <option value="tfa_48" id="tfa_48" class="">Massachusetts</option>
+                        <option value="tfa_49" id="tfa_49" class="">Michigan</option>
+                        <option value="tfa_50" id="tfa_50" class="">Minnesota</option>
+                        <option value="tfa_51" id="tfa_51" class="">Mississippi</option>
+                        <option value="tfa_52" id="tfa_52" class="">Missouri</option>
+                        <option value="tfa_53" id="tfa_53" class="">Montana</option>
+                        <option value="tfa_54" id="tfa_54" class="">Nebraska</option>
+                        <option value="tfa_55" id="tfa_55" class="">Nevada</option>
+                        <option value="tfa_56" id="tfa_56" class="">New Hampshire</option>
+                        <option value="tfa_57" id="tfa_57" class="">New Jersey</option>
+                        <option value="tfa_58" id="tfa_58" class="">New Mexico</option>
+                        <option value="tfa_59" id="tfa_59" class="">New York</option>
+                        <option value="tfa_60" id="tfa_60" class="">North Carolina</option>
+                        <option value="tfa_61" id="tfa_61" class="">North Dakota</option>
+                        <option value="tfa_62" id="tfa_62" class="">Ohio</option>
+                        <option value="tfa_63" id="tfa_63" class="">Oklahoma</option>
+                        <option value="tfa_64" id="tfa_64" class="">Oregon</option>
+                        <option value="tfa_65" id="tfa_65" class="">Pennsylvania</option>
+                        <option value="tfa_66" id="tfa_66" class="">Rhode Island</option>
+                        <option value="tfa_67" id="tfa_67" class="">South Carolina</option>
+                        <option value="tfa_68" id="tfa_68" class="">South Dakota</option>
+                        <option value="tfa_69" id="tfa_69" class="">Tennessee</option>
+                        <option value="tfa_70" id="tfa_70" class="">Texas</option>
+                        <option value="tfa_71" id="tfa_71" class="">Utah</option>
+                        <option value="tfa_72" id="tfa_72" class="">Vermont</option>
+                        <option value="tfa_73" id="tfa_73" class="">Virginia</option>
+                        <option value="tfa_74" id="tfa_74" class="">Washington</option>
+                        <option value="tfa_75" id="tfa_75" class="">West Virginia</option>
+                        <option value="tfa_76" id="tfa_76" class="">Wisconsin</option>
+                        <option value="tfa_77" id="tfa_77" class="">Wyoming</option>
+                        <option value="tfa_78" id="tfa_78" class="">Puerto Rico</option>
+                        <option value="tfa_79" id="tfa_79" class="">Virgin Island</option>
+                        <option value="tfa_80" id="tfa_80" class="">Northern Mariana Islands</option>
+                        <option value="tfa_81" id="tfa_81" class="">Guam</option>
+                        <option value="tfa_82" id="tfa_82" class="">American Samoa</option>
+                        <option value="tfa_83" id="tfa_83" class="">Palau</option>
+                      </select></div>
+                  </div>
+                  <div class="oneField field-container-D    " style="float:left;"id="tfa_84-D">
+                    <label id="tfa_84-L" class="label preField reqMark" for="tfa_84">Zip</label><br>
+                    <div class="inputWrapper"><input type="text" id="tfa_845" name="tfa_84" value="%%=v(@zip)=%%"
+                        title="Zip"></div>
+                  </div>
+                </div>
+              </div>
+              <div id="tfa_98" class="section group wf-acl-hidden">
+                <div class="oneField field-container-D    " style="float:left;"id="tfa_96-D">
+                  <label id="tfa_96-L" class="label preField " for="tfa_96">Pre-Pop State</label><br>
+                  <div class="inputWrapper"><input type="text" id="tfa_96" name="tfa_96" value="%%=v(@state)=%%"
+                      title="Pre-Pop State" class=""></div>
+                </div>
+                <div class="oneField field-container-D    " style="float:left;"id="tfa_88-D">
+                  <label id="tfa_88-L" class="label preField " for="tfa_88">Program of Interest</label><br>
+                  <div class="inputWrapper"><input type="text" id="tfa_88" name="tfa_88" value="%%=v(@programName)=%%"
+                      title="Program of Interest" class=""></div>
+                </div>
+                <div class="oneField field-container-D    " style="float:left;"id="tfa_85-D">
+                  <label id="tfa_85-L" class="label preField " for="tfa_85">Intended Term Start</label><br>
+                  <div class="inputWrapper"><input type="text" id="tfa_85" name="tfa_85" value="%%=v(@term)=%%"
+                      title="Intended Term Start" class=""></div>
+                </div>
+              </div>
+              <div class="oneField field-container-D    " style="float:left;"id="tfa_90-D">
+                <label id="tfa_90-L" class="label preField reqMark" for="tfa_90">High School Attended</label><br>
+                <div class="inputWrapper"><input aria-required="true" type="text" id="tfa_90" name="tfa_90"
+                    value="%%=v(@HighSchoolName)=%%" title="High School Attended" class="required"></div>
+              </div>
+  
+ 
+    <p style="margin-left:5px; font-size:18px; font-weight:600;">
+    Event details:
+  </p>
+  
+             <div class="oneField field-container-D    "style="float:left;" id="tfa_157-D">
+<label id="tfa_157-L" class="label preField reqMark" for="tfa_157">Event Date</label><br><div class="inputWrapper"><input aria-required="true" type="text" id="tfa_157" name="tfa_157" value="" title="Event Date" class="calc-eventDateStart required"></div>
+</div>
+             <div class="oneField field-container-D    " style="float:left;"id="tfa_150-D">
+<label id="tfa_150-L" class="label preField reqMark" for="tfa_150">Available Times</label><br><div class="inputWrapper"><select aria-required="true" id="tfa_150" name="tfa_150" title="Available Times" class="calc-weekdayTimes required"><option value=""></option>
+</select></div>
+</div>
+
+              <div class="oneField field-container-D    " style="float:left;"id="tfa_89-D">
+                <label id="tfa_89-L" class="label preField reqMark" for="tfa_89">Number of Guests (excluding
+                  yourself)</label><br>
+                <div class="inputWrapper"><input aria-required="true" type="text" id="tfa_89" name="tfa_89" value=""
+                    title="Number of Guests (excluding yourself)" class="required"></div>
+              </div>
+              <div class="oneField field-container-D    " style="float:left;"id="tfa_159-D">
+<label id="tfa_159-L" class="label preField " for="tfa_159">Parent/Supporter Name (Optional)</label><br><div class="inputWrapper"><input type="text" id="tfa_159" name="tfa_159" value="" title="Parent/Supporter Name (Optional)" class=""></div>
+</div>
+<div class="oneField field-container-D    " style="float:left;"id="tfa_161-D">
+<label id="tfa_161-L" class="label preField " for="tfa_161">Parent/Supporter Email (Optional)</label><br><div class="inputWrapper"><input type="text" id="tfa_161" name="tfa_161" value="" title="Parent/Supporter Email (Optional)" class=""></div>
+</div>
+   
+  
+  
+  <div id="tfa_166" class="section inline group">
+<div class="oneField field-container-D    " id="tfa_162-D">
+   <p style="margin-bottom:10px; font-size:16px; font-weight:600;" >
+    Transfer information:
+  </p>
+<label id="tfa_162-L" class="label preField reqMark" for="tfa_162">Have You Completed More Than 12 College Credits?</label><br><div class="inputWrapper"><select aria-required="true" id="tfa_162" name="tfa_162" title="Have You Completed More Than 12 College Credits?" class="required"><option value="">Please select...</option>
+<option value="tfa_163" id="tfa_163" data-conditionals="#tfa_165" class="">Yes</option>
+<option value="tfa_164" id="tfa_164" class="">No</option></select></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_165-D">
+<label id="tfa_165-L" class="label preField reqMark" for="tfa_165">Name of College or University Previously Attended</label><br><div class="inputWrapper"><input aria-required="true" type="text" id="tfa_165" name="tfa_165" value="" data-condition="`#tfa_163`" title="Name of College or University Previously Attended" class="required"></div>
+</div>
+</div>
+              <div class="htmlSection" id="tfa_95">
+                <div class="htmlContent" id="tfa_95-HTML">By clicking "Register," I agree to receive emails, phone
+                    calls, and SMS/Text Messages from Southern New Hampshire University (SNHU) at the numbers I provided
+                    (land and/or wireless), including calls or texts made using automated technology or prerecorded
+                    voice messages. This consent is not required to purchase services. You may also call SNHU at
+                    800.668.1249. Terms and Conditions apply.</div>
+              </div>
+              <div class="actions" id="5054826-A" data-contentid="submit_button"><input type="submit" data-label="Register" class="primaryAction" id="submit_button" value="Register" onclick="dataLayer.push({'event': 'Register_Submit'});"></div>
+<div style="clear:both"></div>
+<input type="hidden" value="5054826" name="tfa_dbFormId" id="tfa_dbFormId"><input type="hidden" value="" name="tfa_dbResponseId" id="tfa_dbResponseId"><input type="hidden" value="6f50030a082ab585007717466c06f69d" name="tfa_dbControl" id="tfa_dbControl"><input type="hidden" value="" name="tfa_dbWorkflowSessionUuid" id="tfa_dbWorkflowSessionUuid"><input type="hidden" value="2" name="tfa_dbVersionId" id="tfa_dbVersionId"><input type="hidden" value="" name="tfa_switchedoff" id="tfa_switchedoff">
+</form>
+</div>
+</div>
+<div class="wFormFooter"></div>
+ </div>
+      <script>conditionalFields(URLsfid5)
+      </script>
+     <script
+    id="open-telemetry-script"
+    type="text/javascript"
+    src="https://snhu.tfaforms.net/dist/open-telemetry/open-telemetry.3e6c1bedaa7fb4452dd0.js"
+    data-customer-id="30021"
+    data-exporter-url="https://us-east-1-otel.formassembly.com/v1/traces"
+    data-exporter-console="0"
+></script>
+<script src="https://snhu.tfaforms.net/api_v2/sst/copy-and-paste"></script>
+
+      <script runat="server">
+        Platform.Load("core", "1");
+        var type = "Accepted";
+        var eventTypeDE = Request.GetFormField("EventTypeDE");
+        var OrdersDE = DataExtension.Init("DE-UC-Accepted-Students-Day-Dates");
+        var rows = OrdersDE.Rows.Lookup(["Event_Type"], [type]);
+        var result5 = '';
+
+        if (rows.length >= 1) {
+          for (var i = 0; i < rows.length; i++) {
+            var orderItem = rows[i]["StartDate"];
+            result5 += "'" + orderItem + "', ";
+          }
+        } else {
+          result5 = "No items to display";
+        }
+
+      </script>
+      <script>
+        $(function () {
+          // Specify the selectable dates as a string
+          var selectableDatesStr = ("<ctrl:var name=result5/>");
+
+          // Get the first date from the string
+          var firstDateStr = selectableDatesStr.split(',')[0];
+
+          // Parse the first date string to a JavaScript Date object
+          var firstAvailableDate = new Date(firstDateStr);
+
+          // Function to check if the given date is a weekend
+          function isWeekend(date) {
+            var day = date.getDay();
+            return day === 0 || day === 6;
+          }
+
+          $("#tfa_157").datepicker({
+            beforeShowDay: function (date) {
+              // Format the current date to match the selectable dates format
+              var formattedDate = $.datepicker.formatDate('yy-mm-dd', date);
+
+              // Check if the current date is in the selectable dates array
+              if (selectableDatesStr.indexOf(formattedDate) != -1) {
+                // Return an array with the CSS class and tooltip for selectable dates
+                return [true, 'selectable', 'Selectable date'];
+              } else {
+                // Return an array with the CSS class and tooltip for non-selectable dates
+                return [false, 'non-selectable', 'Non-selectable date'];
+              }
+            },
+            defaultDate: firstAvailableDate
+          });
+
+          // Change the available times based on weekday/weekend
+          $("#tfa_157").on("change", function () {
+            var selectedDate = $("#tfa_157").datepicker("getDate");
+            var isWeekendSelected = isWeekend(selectedDate);
+
+            // Clear previous options
+            $("#tfa_150").empty();
+
+            if (isWeekendSelected) {
+              $("#tfa_150").append('<option value="tfa_151" id="tfa_151" class="">9am</option>');
+            } else {
+              $("#tfa_150").append('<option value="tfa_151" id="tfa_151" class="">9am</option>');
+            }
+          });
+        });
+      </script>
+
+    </div>
+
+  </div>
+
+      <!-- Event Banner -->
+<div role="banner" class="container-fluid bgimage d-flex align-items-center">
+  <div class="col-12 col-lg-4 mx-3 px-3 mx-lg-5 px-lg-5">
+    <div class="text-white">
+      <h2 class="display-6 py-3 fw-bold" style="color: #fff; font-size: 2rem;">Take our Virtual Campus Tour</h2>
+      <p class="lead mb-0" style="max-width: 100%; overflow-wrap: break-word; font-size: 1rem;">
+       Experience this fully narrated, 360-degree tour of the SNHU campus. Whether it's in addition to or instead of joining us in person, you'll be glad you took a look around. <p>
+      
+      </p>
+      <a class="btn btn-lg btn-primary my-3 mt-4" href="https://www.youvisit.com/tour/snhu/snhu?tourid=tour3" target="_blank">View Virtual Tour</a>
+    </div>
+  </div>
+</div>
+
+  <!--Accordion-->
+
+  <div role="region" aria-label="Frequently Asked Questions" class="container-fluid col-lg-10 px-3 py-3 px-lg-5 py-lg-5"
+    id="faq">
+
+    <h2 class="display-5 fw-bold px-3 py-3">Frequently Asked Questions</h2>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Where should I check in for my campus visit?
+          </button>
+        </h3>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>Check-in locations can vary depending on your type of visit. Please refer to the visit confirmation email you received at the time of your registration for more detailed check-in information. You can also view or download this <a href="https://alumni.snhu.edu/file/Campus-Map.pdf" target="_blank">campus map</a>, which shows building locations. </p>
+            </li>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            What time should I arrive for my visit?
+          </button>
+        </h3>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>Please plan to arrive 15 minutes prior to the scheduled start time of your visit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Who should I contact if I need to reschedule my visit?
+          </button>
+        </h3>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>Please contact the Office of Admission at <a href="tel:6036459611" target="_blank">603.645.9611</a> or <a href="mailto:admission@snhu.edu" target="_blank">admission@snhu.edu</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            How many guests can I bring to my visit?
+          </button>
+        </h3>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>Please limit your party to three people (yourself and up to two guests).
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+            Where should I park on campus?
+          </button>
+        </h3>
+        <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>Parking locations can vary depending on your type of visit. Please refer to the visit confirmation email you received at the time of your registration for more detailed instructions about where to park. You can also view or download this <a href="https://alumni.snhu.edu/file/Campus-Map.pdf" target="_blank">campus map</a>, which shows parking lot locations.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+            How long will my campus tour be?
+
+          </button>
+        </h3>
+        <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>You will embark on a 60-minute walking tour of campus. Your visit will also include a brief information
+              session and the opportunity to speak with admission staff.
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+            Who do I contact if I need an accommodation during my visit?
+          </button>
+        </h3>
+        <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>To request an accommodation, please contact the Office of Admission at <a href="tel:6036459611" target="_blank">603.645.9611</a> or <a href="mailto:admission@snhu.edu" target="_blank">admission@snhu.edu</a> prior to your scheduled visit.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+            Will I be able to meet with an admission counselor during my visit?
+          </button>
+        </h3>
+        <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>Yes. During all campus admission events (including campus tours), you’ll have the opportunity to speak with our admission staff.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+            Can I meet with an athletic coach during my visit?
+
+
+          </button>
+        </h3>
+        <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>We recommend contacting the coaching staff directly to schedule a meeting. Information regarding SNHU’s varsity sport teams and coach contact information can be found on our <a href="https://snhupenmen.com/index.aspx" target="_blank">athletics webpage</a>. 
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+            Will I be able to meet with a faculty member during my visit?
+
+
+          </button>
+        </h3>
+        <div id="flush-collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>Faculty meeting requests must be made prior to your scheduled visit. Please contact the Office of
+              Admission at <a href="tel:6036459611" target="_blank">603.645.9611</a> or <a href="mailto:admission@snhu.edu" target="_blank">admission@snhu.edu</a> to see if this request may be accommodated.
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+            Are you able to provide a school excusal letter following my visit?
+
+
+          </button>
+        </h3>
+        <div id="flush-collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>School excusal letters are available, upon request, at the close of your campus visit.
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+
+
+  <!--Accreditation-->
+
+  <div role="region" aria-label="Accreditations" class="container-fluid align-items-center text-center py-5 bg-light">
+    <img class="col-10 col-xxl-6"
+      src="https://client-data.knak.io/production/email_assets/5fd10b569d941/URLXxrrgwra1n8IolHbmjqoC3cLBsPysUnEDKV6p.png"
+      alt="SNHU accreditation logos" width="100%" height="auto">
+  </div>
+
+
+  <!--Footer-->
+
+  <div class="container-fluid py-5 px-5 align-text-top" style="background-color: #00244E;">
+    <div class="row text-white mb-5">
+      <div class="col-12 col-md-5 col-xl-6">
+        <a href="https://www.snhu.edu/" target="_blank">
+          <img
+            src="https://client-data.knak.io/production/email_assets/5fd10b569d941/Y9PaAR4BN1uvwQSeUR37Jtdwa2YUrN1By1RZIsk8.png"
+            alt="SNHU logo" class="mb-4" width="300px">
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+        <p class="text-white h6 fw-bold">Visit</p>
+        <p>SNHU Admission<br>
+          2500 North River Road<br>
+          Manchester, NH 03106</p>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 col-xl-3">
+        <p class="text-white h6 fw-bold">Contact</p>
+        <p>603.645.9611<br>
+          admission@snhu.edu</p>
+      </div>
+    </div>
+    <div class="row mx-sm-3 text-white border-top">
+      <div class="col">
+        <p class="pt-2 text-white-50">Copyright © 2023 Southern New Hampshire University</p>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!---->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+  <script>
+    function openEvent(evt, eventName) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" activeTab", "");
+      }
+
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(eventName).style.display = "block";
+      evt.currentTarget.className += " activeTab";
+
+    }
+    // Open the directed tab on page load - selected by URL parameter or defualt to tours - also pre-selects current day on the campus tour calendar
+    window.onload = function () {
+      document.getElementById("tabopen").click();
+    };
+
+
+  </script>
+
+</body>
+
+</html>
